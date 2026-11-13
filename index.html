@@ -1,0 +1,1910 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>LCDU · Kelas Bahasa Arab &amp; Inggris</title>
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="icon" href="assets/brand/web/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="assets/brand/web/apple-touch-icon.png">
+<!-- Hero foto: foto malam dimuat lebih awal sesuai orientasi layar (ukuran dipilih browser; rumusnya sama dengan pickWidth di hero/lentera-hd.js) -->
+<link rel="preload" as="image" type="image/avif" href="assets/hero/build/night-tall-750.avif" imagesrcset="assets/hero/build/night-tall-750.avif 750w, assets/hero/build/night-tall-1024.avif 1024w" imagesizes="(min-aspect-ratio: 2/3) 100vw, 66.67vh" media="(orientation: portrait)" fetchpriority="high">
+<link rel="preload" as="image" type="image/avif" href="assets/hero/build/night-wide-v2-1280.avif" imagesrcset="assets/hero/build/night-wide-v2-1280.avif 1280w, assets/hero/build/night-wide-v2-1536.avif 1536w" imagesizes="(min-aspect-ratio: 3/2) 100vw, 150vh" media="(orientation: landscape)" fetchpriority="high">
+<meta name="description" content="Kelas Bahasa Arab &amp; Inggris online dari LCDU, untuk dakwah dan umat. Biaya Rp100.000 per term (1 semester).">
+<!-- Font di-host sendiri (woff2 variabel, subset Latin/Arab). Preload: judul hero + teks badan. -->
+<script>document.documentElement.classList.add('js')</script>
+<link rel="preload" href="fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+/* Fraunces (judul; variabel 300–700 + miring 600–700 untuk Pengantar), Plus Jakarta Sans (teks), Reem Kufi & Noto Naskh Arabic (Arab) — semua OFL, lihat fonts/README.md */
+@font-face{font-family:'Fraunces';font-style:normal;font-weight:300 700;font-display:swap;src:url(fonts/fraunces-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Fraunces';font-style:italic;font-weight:600 700;font-display:swap;src:url(fonts/fraunces-italic-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Plus Jakarta Sans';font-style:normal;font-weight:400 800;font-display:swap;src:url(fonts/plus-jakarta-sans-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Reem Kufi';font-style:normal;font-weight:500 700;font-display:swap;src:url(fonts/reem-kufi-arabic.woff2) format('woff2');unicode-range:U+0600-06FF, U+0750-077F, U+0870-0891, U+0897-08E1, U+08E3-08FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE70-FE74, U+FE76-FEFC, U+102E0-102FB, U+10E60-10E7E, U+10EC2-10EC7, U+10EC9-10EEE, U+10EF0-10EFF, U+1EE00-1EE03, U+1EE05-1EE1F, U+1EE21-1EE22, U+1EE24, U+1EE27, U+1EE29-1EE32, U+1EE34-1EE37, U+1EE39, U+1EE3B, U+1EE42, U+1EE47, U+1EE49, U+1EE4B, U+1EE4D-1EE4F, U+1EE51-1EE52, U+1EE54, U+1EE57, U+1EE59, U+1EE5B, U+1EE5D, U+1EE5F, U+1EE61-1EE62, U+1EE64, U+1EE67-1EE6A, U+1EE6C-1EE72, U+1EE74-1EE77, U+1EE79-1EE7C, U+1EE7E, U+1EE80-1EE89, U+1EE8B-1EE9B, U+1EEA1-1EEA3, U+1EEA5-1EEA9, U+1EEAB-1EEBB, U+1EEF0-1EEF1}
+@font-face{font-family:'Reem Kufi';font-style:normal;font-weight:500 700;font-display:swap;src:url(fonts/reem-kufi-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Noto Naskh Arabic';font-style:normal;font-weight:400 700;font-display:swap;src:url(fonts/noto-naskh-arabic-arabic.woff2) format('woff2');unicode-range:U+0600-06FF, U+0750-077F, U+0870-0891, U+0897-08E1, U+08E3-08FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE70-FE74, U+FE76-FEFC, U+102E0-102FB, U+10E60-10E7E, U+10EC2-10EC7, U+10EC9-10EEE, U+10EF0-10EFF, U+1EE00-1EE03, U+1EE05-1EE1F, U+1EE21-1EE22, U+1EE24, U+1EE27, U+1EE29-1EE32, U+1EE34-1EE37, U+1EE39, U+1EE3B, U+1EE42, U+1EE47, U+1EE49, U+1EE4B, U+1EE4D-1EE4F, U+1EE51-1EE52, U+1EE54, U+1EE57, U+1EE59, U+1EE5B, U+1EE5D, U+1EE5F, U+1EE61-1EE62, U+1EE64, U+1EE67-1EE6A, U+1EE6C-1EE72, U+1EE74-1EE77, U+1EE79-1EE7C, U+1EE7E, U+1EE80-1EE89, U+1EE8B-1EE9B, U+1EEA1-1EEA3, U+1EEA5-1EEA9, U+1EEAB-1EEBB, U+1EEF0-1EEF1}
+@font-face{font-family:'Noto Naskh Arabic';font-style:normal;font-weight:400 700;font-display:swap;src:url(fonts/noto-naskh-arabic-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+body{margin:0}
+/* Palet "semangka-keffiyeh" × logo LCDU. Hijau = Arab & identitas LCDU, biru = Inggris, merah = aksen hangat & blok besar,
+   hitam + putih = pola keffiyeh, kunyit = HANYA tombol aksi. Latar dasar putih hangat; warna kuat datang dari blok per section. */
+:root{
+  /* warna inti (kontras dihitung, tabel di CLAUDE.md). "isi" = latar dengan teks putih; "-ink" = teks/garis di latar halaman */
+  --logo-biru:#1724C0; --logo-hijau:#7FA33F;   /* warna logo persis. Hijau logo = juga kulit muda semangka; dekor saja, bukan teks (2,8:1) */
+  --kulit:#1E6B3A;         /* hijau kulit semangka tua: teks Arab & blok hijau (putih di atasnya 6,5:1) */
+  --kulit-deep:#134526;
+  --semangka:#E23B4A;      /* merah semangka terang: dekor (daging semangka, ornamen), judul sangat besar saja (4,0–4,2:1) */
+  --semangka-tua:#B3202E;  /* merah tua: teks merah & blok merah ber-teks (putih di atasnya 6,6:1) */
+  --keffiyeh:#111111;      /* hitam keffiyeh */
+  --putih:#FFFFFF;
+  --lazuardi:#1724C0;      /* Inggris, isi (= biru logo; teks putih 10,2:1) */
+  --lazuardi-deep:#101986;
+  --lazuardi-ink:#1724C0;  /* teks di latar fase ≥ 9,3:1 */
+  --zamrud:var(--kulit);   /* Arab, isi (nama lama dipertahankan supaya komponen tidak berubah) */
+  --zamrud-deep:var(--kulit-deep);
+  --zamrud-ink:var(--kulit);   /* teks di latar fase ≥ 5,9:1 */
+  --kunyit:#FFC21A;        /* aksi utama */
+  --kunyit-ink:#2A1E00;
+  --paper:#FCF9F4;         /* putih hangat */
+  --surface:#FFFFFF;
+  --ink:#10163A;
+  --ink-soft:#4B4F63;
+  --line:#E6DFD3;
+  --on-color:#FFFFFF;
+  --on-color-soft:rgba(255,255,255,.78);
+  --good:#0B7A57;
+  --bad:#C2372B;
+
+  --f-display:"Fraunces",Georgia,"Times New Roman",serif;
+  --f-body:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-ar-display:"Reem Kufi","Noto Naskh Arabic","Geeza Pro",serif;
+  --f-ar:"Noto Naskh Arabic","Geeza Pro","Arabic Typesetting",serif;
+
+  --step--1:clamp(.82rem,.78rem + .2vw,.9rem);
+  --step-0:clamp(1rem,.96rem + .2vw,1.1rem);
+  --step-1:clamp(1.2rem,1.1rem + .5vw,1.45rem);
+  --step-2:clamp(1.5rem,1.25rem + 1.1vw,2.1rem);
+  --step-3:clamp(2rem,1.5rem + 2.2vw,3.3rem);
+  --step-4:clamp(2.6rem,1.6rem + 4.6vw,5.6rem);
+
+  --r-sm:10px; --r-md:18px; --r-lg:28px;
+  --ease:cubic-bezier(.2,.8,.2,1);
+
+  /* "Satu hari belajar": sekarang sangat halus — semua putih hangat dengan rona tipis (pagi persik, siang netral, sore
+     gandum, senja mawar). Malam tetap gelap: hampir hitam keffiyeh yang hangat. Tinta gelap #10163A pagi–senja. */
+  --pagi-bg:#FDF8F1;  --pagi-soft:#4B4F63;
+  --siang-bg:#FAFAF7; --siang-soft:#4B4F63;
+  --sore-bg:#FCF5EA;  --sore-soft:#4B4F63;
+  --senja-bg:#FAF3F1; --senja-soft:#4B4F63;
+  --malam-bg:#14120F; --malam-soft:#B9B2A6;
+  --lentera:#FFC96B;  /* cahaya hangat (titik lentera, ujung benang) */
+  --sambung:clamp(140px,18vw,240px);          /* panjang gradasi antar-fase (hanya di area kosong) */
+  --sambung-malam:clamp(260px,42vh,420px);    /* senja → malam lebih panjang: perubahan terang → gelap */
+
+  /* gerak: hanya tiga jenis (muncul, tergambar, menyala) */
+  --dur-muncul:.7s; --dur-menyala:1.2s;
+  --ease-muncul:cubic-bezier(.2,.8,.2,1); --ease-menyala:cubic-bezier(.3,0,.2,1);
+
+  /* ornamen (SVG sebagai masker; warnanya dari background:currentColor / token, jadi ikut fase) */
+  --orn-band:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='14' viewBox='0 0 28 14'%3E%3Cpath d='M0 1h28M0 13h28' stroke='%23000' stroke-width='1.2'/%3E%3Cpath d='M3 10.5C3.5 6 6.5 3.5 11 3.5 10.5 8 7.5 10.5 3 10.5ZM17 3.5C21.5 3.5 24.5 6 25 10.5 20.5 10.5 17.5 8 17 3.5Z'/%3E%3C/svg%3E");
+  --orn-net:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Cpath d='M0 0L20 20M20 0L0 20' stroke='%23000' stroke-width='.9'/%3E%3Ccircle cx='10' cy='10' r='1.3'/%3E%3C/svg%3E");
+  --orn-benang:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='6' height='12' viewBox='0 0 6 12'%3E%3Cpath d='M3 0L5.4 3 3 6 .6 9 3 12' fill='none' stroke='%23000' stroke-width='1.3'/%3E%3C/svg%3E");
+  --orn-benang-tebal:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='12' viewBox='0 0 8 12'%3E%3Cpath d='M4 0L7 3 4 6 1 9 4 12' fill='none' stroke='%23000' stroke-width='2.3' stroke-linejoin='round'/%3E%3C/svg%3E");
+  --orn-benang-x:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='6' viewBox='0 0 12 6'%3E%3Cpath d='M0 3L3 .6 6 3 9 5.4 12 3' fill='none' stroke='%23000' stroke-width='1.3'/%3E%3C/svg%3E");
+  --orn-leaf:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill-rule='evenodd' d='M4.5 19.5C4.5 10.5 10.5 4.5 20 4 19.5 13.5 13.5 19.5 4.5 19.5ZM6.6 18.1L15.4 9.3 16 9.9 7.2 18.7Z'/%3E%3Cpath d='M2.5 21.5L5 19' stroke='%23000' stroke-width='1.6' stroke-linecap='round'/%3E%3C/svg%3E");
+  --orn-lentera:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cdefs%3E%3CradialGradient id='g'%3E%3Cstop offset='0'/%3E%3Cstop offset='.3' stop-opacity='.75'/%3E%3Cstop offset='1' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Ccircle cx='12' cy='12' r='12' fill='url(%23g)'/%3E%3Ccircle cx='12' cy='12' r='3.2'/%3E%3C/svg%3E");
+  /* tepi sobekan struk: gigi zigzag keffiyeh (acuan .orn-band), dipakai sebagai masker di tepi bawah */
+  --orn-sobek:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M0 0H12V2L9 8 6 2 3 8 0 2Z'/%3E%3C/svg%3E");
+  --orn-seed:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 16'%3E%3Cpath d='M6 1C9 4.5 10.5 8 10.5 10.7A4.5 4.5 0 0 1 1.5 10.7C1.5 8 3 4.5 6 1Z'/%3E%3C/svg%3E");
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --lazuardi:#1724C0; --lazuardi-deep:#101986; --lazuardi-ink:#7E87F0; --zamrud:#1E6B3A; --zamrud-deep:#134526; --zamrud-ink:#7FA33F;
+    --paper:#14120F; --surface:#1D1A16; --ink:#F3EFE8; --ink-soft:#B9B2A6; --line:#2E2A25;
+    --good:#3CC48F; --bad:#FF7A6E; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --lazuardi:#1724C0; --lazuardi-deep:#101986; --lazuardi-ink:#7E87F0; --zamrud:#1E6B3A; --zamrud-deep:#134526; --zamrud-ink:#7FA33F;
+  --paper:#14120F; --surface:#1D1A16; --ink:#F3EFE8; --ink-soft:#B9B2A6; --line:#2E2A25;
+  --good:#3CC48F; --bad:#FF7A6E; color-scheme:dark;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+/* Lenis (scroll halus) — dari vendor/lenis/lenis.css */
+html.lenis,html.lenis body{height:auto}
+.lenis.lenis-smooth{scroll-behavior:auto!important}
+.lenis.lenis-smooth [data-lenis-prevent]{overscroll-behavior:contain}
+.lenis.lenis-stopped{overflow:clip}
+.lenis.lenis-smooth iframe{pointer-events:none}
+body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:var(--step-0);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:clip}
+/* tanpa strip warna di area status bar: di iOS 26 elemen fixed yang menempel di tepi layar membuat Safari mengisi area
+   status bar / toolbar dengan blok warna solid (tidak immersive) */
+h1,h2,h3{margin:0;text-wrap:balance}
+p{margin:0}
+a{color:inherit}
+button{font:inherit;color:inherit}
+[lang="ar"]{font-family:var(--f-ar)}
+:focus-visible{outline:3px solid var(--kunyit);outline-offset:3px;border-radius:6px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+
+.wrap{width:100%;max-width:1240px;margin-inline:auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+@media (min-width:720px){.wrap{padding-left:max(32px,env(safe-area-inset-left,0px));padding-right:max(32px,env(safe-area-inset-right,0px))}}
+.band{padding-block:clamp(72px,10vw,140px)}
+.h2{font-family:var(--f-display);font-weight:700;font-size:var(--step-3);line-height:1.05;letter-spacing:-.02em}
+.lede{color:var(--ink-soft);max-width:56ch;font-size:var(--step-1);line-height:1.55}
+
+/* Tombol */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;min-height:52px;padding:.8em 1.4em;border-radius:999px;border:0;font-weight:700;font-size:1rem;text-decoration:none;cursor:pointer;transition:transform .25s var(--ease),background-color .25s,color .25s,box-shadow .25s}
+.btn:active{transform:scale(.97)}
+.btn-sun{background:var(--kunyit);color:var(--kunyit-ink);box-shadow:0 6px 0 0 color-mix(in srgb,var(--kunyit) 55%,#000)}
+.btn-sun:hover{transform:translateY(-2px)}
+.btn-ghost{background:transparent;color:currentColor;box-shadow:inset 0 0 0 2px currentColor}
+.btn-ghost:hover{background:color-mix(in srgb,currentColor 12%,transparent)}
+.btn-ink{background:var(--ink);color:var(--paper)}
+.btn-ink:hover{transform:translateY(-2px)}
+
+/* ===== SISTEM BERSAMA (semua section setelah hero) ===== */
+/* --- Satu hari belajar: tiap [data-fase] menimpa token warna, jadi komponen lama ikut menyesuaikan --- */
+[data-fase="pagi"],[data-fase="siang"],[data-fase="sore"],[data-fase="senja"]{
+  --ink:#10163A;--surface:#FFFFFF;--lazuardi-ink:#1724C0;--zamrud-ink:#1E6B3A;--good:#0B7A57;--bad:#C2372B;color-scheme:light}
+[data-fase="pagi"]{--fase-bg:var(--pagi-bg);--paper:var(--pagi-bg);--ink-soft:var(--pagi-soft);--line:#EADFD0}
+[data-fase="siang"]{--fase-bg:var(--siang-bg);--paper:var(--siang-bg);--ink-soft:var(--siang-soft);--line:#E4E2DA}
+[data-fase="sore"]{--fase-bg:var(--sore-bg);--paper:var(--sore-bg);--ink-soft:var(--sore-soft);--line:#EADCC4}
+[data-fase="senja"]{--fase-bg:var(--senja-bg);--paper:var(--senja-bg);--ink-soft:var(--senja-soft);--line:#E8DAD5}
+[data-fase="malam"]{--fase-bg:var(--malam-bg);--paper:var(--malam-bg);--ink-soft:var(--malam-soft);--surface:#1D1A16;--ink:#F3EFE8;--line:#2E2A25;
+  --lazuardi-ink:#8F97F3;--zamrud-ink:#7FA33F;--good:#3CC48F;--bad:#FF7A6E;color-scheme:dark}
+.fase{position:relative;background:var(--fase-bg);color:var(--ink)}
+/* sambungan: gradasi panjang di padding atas fase berikutnya. Teks pertama mulai setelah gradasi selesai, jadi teks
+   selalu berada di atas warna fase yang utuh (titik tengah senja → malam tidak cukup kontras untuk tinta mana pun). */
+.hari>.fase[data-fase="siang"]{--dari:var(--pagi-bg)}
+.hari>.fase[data-fase="sore"]{--dari:var(--siang-bg)}
+.hari>.fase[data-fase="senja"]{--dari:var(--sore-bg)}
+.hari>.fase[data-fase="malam"]{--dari:var(--senja-bg);--sambung:var(--sambung-malam)}
+/* gradasi berbentuk "smoothstep" (landai di kedua ujung) supaya tidak tampak garis di awal/akhir sambungan */
+.hari>.fase+.fase{background:linear-gradient(var(--dari),var(--fase-bg)) 0 0/100% var(--sambung) no-repeat,var(--fase-bg);
+  background:linear-gradient(in oklab,var(--dari) 0%,color-mix(in oklab,var(--dari) 93%,var(--fase-bg)) 15%,color-mix(in oklab,var(--dari) 72%,var(--fase-bg)) 32%,
+    color-mix(in oklab,var(--dari) 50%,var(--fase-bg)) 50%,color-mix(in oklab,var(--dari) 28%,var(--fase-bg)) 68%,color-mix(in oklab,var(--dari) 7%,var(--fase-bg)) 85%,var(--fase-bg) 100%)
+    0 0/100% var(--sambung) no-repeat,var(--fase-bg)}
+.hari>.fase+.fase>.band:first-child{padding-top:max(clamp(72px,10vw,140px),calc(var(--sambung) + 32px))}
+/* logo: ikut fase (warna di fase terang, putih di malam), tidak ikut mode gelap sistem */
+html:root [data-fase] .logo-light{display:block!important}
+html:root [data-fase] .logo-dark{display:none!important}
+html:root [data-fase="malam"] .logo-light{display:none!important}
+html:root [data-fase="malam"] .logo-dark{display:block!important}
+.stub-note{margin-top:16px;padding-left:12px;border-left:2px solid var(--line);color:var(--ink-soft);font-size:var(--step--1)}
+
+/* --- Benang keffiyeh. Desktop ≥ 900px: SATU benang yang menempel pada halaman, dari bawah hero sampai footer.
+   Tiap elemen aliran (anak langsung .fase di #hari + footer) = satu ruas, ujung atas/bawah bersambung:
+   ::after = garis dasar redup putus-putus (CSS murni, tampil juga tanpa JS); .ruas-isi (dari JS) = bagian yang sudah
+   dilewati, pola jahitan keffiyeh tegas, terbuka dengan clip-path lewat view timeline ruas itu sendiri sehingga batas
+   terisi|redup selalu di garis picu (--picu, 52% tinggi layar) — tempat bulat kuning (fixed) berada. Warna ruas =
+   --benang-c / --benang-bg (gelap di latar terang, krem di blok hijau/merah, gradasi di zona peralihan).
+   HP < 900px: garis progres di atas (fixed .benang). Hanya clip-path pada elemen 8px; tanpa rAF baru. --- */
+:root{--picu:52vh;--benang-x:max(12px,calc((100vw - 1240px) / 2 + 12px))}
+@media (min-width:900px){
+  :is(.hari > .fase > *, footer.fase){position:relative;isolation:isolate}
+  :is(.hari > .fase > *, footer.fase)::after{content:"";position:absolute;z-index:2;top:0;bottom:0;left:calc(var(--benang-x) + 2.5px);width:3px;pointer-events:none;
+    background:var(--benang-bg,var(--benang-c,currentColor));opacity:.85}
+  .js :is(.hari > .fase > *, footer.fase)::after{opacity:.3;
+    -webkit-mask:repeating-linear-gradient(#000 0 7px,transparent 7px 13px);mask:repeating-linear-gradient(#000 0 7px,transparent 7px 13px)}
+  .ruas-isi{position:absolute;z-index:3;top:0;bottom:0;left:var(--benang-x);width:8px;pointer-events:none;
+    background:var(--benang-bg,var(--benang-c,currentColor));opacity:.92;clip-path:inset(0 0 100% 0);
+    -webkit-mask:var(--orn-benang-tebal) 0 0/8px 12px repeat-y;mask:var(--orn-benang-tebal) 0 0/8px 12px repeat-y}
+  /* warna per latar (kontras ≥ 3:1): krem di blok hijau & merah, gelap di bagian terang yang menempel */
+  .why{--benang-bg:linear-gradient(#10163A,#F5DEC1 var(--masuk),#F5DEC1 calc(100% - 24px),#10163A calc(100% - 24px))}
+  .cost-blok{--benang-bg:linear-gradient(#F5DEC1 calc(100% - 40px),#10163A calc(100% - 40px))}
+  .batas-biji{--benang-bg:linear-gradient(#10163A 50%,#F5DEC1 50%)}
+  #donasi{--benang-bg:linear-gradient(#10163A,#F3EFE8 var(--sambung-malam))}
+}
+.ruas-isi{display:none}
+@media (min-width:900px){.ruas-isi{display:block}}
+@keyframes ruas-tarik{from{clip-path:inset(0 0 100% 0)}to{clip-path:inset(0)}}
+@supports (animation-timeline: view()){
+  /* mulai saat atas ruas di garis picu, selesai saat bawah ruas di garis picu */
+  .ruas-isi{animation:ruas-tarik linear both;animation-timeline:view();animation-range:cover calc(100vh - var(--picu)) cover calc(100% - var(--picu))}
+}
+/* bulat kuning = "yang menarik benang": diam di garis picu (desktop), tampil selama benang ada di garis itu */
+.benang{position:fixed;z-index:30;pointer-events:none;top:0;bottom:0;left:var(--benang-x);width:8px;
+  color:var(--ink);opacity:0;transition:opacity .5s,color .8s}
+.benang.is-on{opacity:1}
+.benang i{position:absolute;display:block}
+.benang-garis{inset:0;background:currentColor;opacity:.5;-webkit-mask:var(--orn-benang) 0 0/6px 12px repeat-y;mask:var(--orn-benang) 0 0/6px 12px repeat-y;
+  clip-path:inset(0 0 calc(100% - var(--benang,0) * 100%) 0)}
+.benang-ujung{left:-4px;top:calc(var(--picu) - 8px);width:16px;height:16px;border-radius:50%;background:var(--kunyit);
+  box-shadow:0 0 0 2px #10163A,0 0 0 6px color-mix(in srgb,var(--lentera) 35%,transparent),0 0 22px 8px color-mix(in srgb,var(--lentera) 45%,transparent)}
+@media (min-width:900px){.benang-garis{display:none}}
+@keyframes benang-tarik{from{clip-path:inset(0 0 100% 0)}to{clip-path:inset(0)}}
+@keyframes benang-tarik-x{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0)}}
+/* HP: garis progres tipis di atas, TIDAK menempel tepi layar (iOS 26 Safari mewarnai status bar bila ada strip fixed di tepi) */
+@media (max-width:899px){
+  .benang{top:calc(env(safe-area-inset-top,0px) + 5px);bottom:auto;left:16px;right:16px;width:auto;height:3px}
+  .benang-garis{-webkit-mask:var(--orn-benang-x) 0 0/6px 3px repeat-x;mask:var(--orn-benang-x) 0 0/6px 3px repeat-x;opacity:.6;
+    clip-path:inset(0 calc(100% - var(--benang,0) * 100%) 0 0)}
+  .benang-ujung{display:none!important}
+}
+@supports (animation-timeline: view()) and (timeline-scope: --a){
+  html{timeline-scope:--hari}
+  .hari{view-timeline:--hari block}
+  .benang-garis{animation-timing-function:linear;animation-fill-mode:both;animation-timeline:--hari;animation-range:entry 50% contain 100%;animation-name:benang-tarik}
+  @media (max-width:899px){.benang-garis{animation-name:benang-tarik-x}}
+}
+/* reduced-motion: benang tampil diam & utuh (tanpa bulat kuning, tanpa transisi); lentera langsung menyala saat dicapai */
+@media (prefers-reduced-motion: reduce){
+  .benang{transition:none}
+  .benang-garis,.ruas-isi{clip-path:none!important;animation:none!important}
+  .benang-ujung{display:none!important}
+}
+
+/* --- Lentera di benang ([data-lentera] pada section): "Setiap ilmu yang kita pelajari menyalakan satu cahaya".
+   JS membuat satu penanda per section (aria-hidden, pointer-events:none) di garis benang, sejajar tengah baris pertama
+   judul. Penanda 1px selalu ada (juga di HP) supaya IntersectionObserver bisa mengamatinya; isinya hanya tampil ≥ 900px.
+   Menyala (.nyala, sekali) TEPAT saat bulat kuning melewatinya: IO dengan area di atas garis picu (52%); lentera
+   sebelumnya ikut menyala (lompatan #anchor). Inti 18px: cincin --lt-c (kontras ≥ 3:1 terhadap latar) → isi kunyit;
+   cahaya radius 40px = radial-gradient yang opacity-nya berubah, di bawah teks (z-index −1 dalam section yang terisolasi).
+   data-lentera="zaitun" = ujung perjalanan (Donasi). Hanya opacity & transform. --- */
+[data-lentera]{position:relative}
+.lentera-tanda{position:absolute;top:0;left:calc(var(--benang-x) + 4px);width:1px;height:1px;pointer-events:none;--lt-c:#10163A}
+.why .lentera-tanda,.cost-blok .lentera-tanda{--lt-c:#F5DEC1}
+[data-fase="malam"] .lentera-tanda{--lt-c:#F3EFE8}
+.lt-cahaya,.lt-inti{position:absolute;display:none}
+@media (min-width:900px){.lt-cahaya,.lt-inti{display:block}}
+.lt-cahaya{z-index:-1;left:-40px;top:-40px;width:80px;height:80px;border-radius:50%;opacity:0;
+  background:radial-gradient(closest-side,color-mix(in srgb,var(--kunyit) 85%,transparent) 0 18%,color-mix(in srgb,var(--lentera) 45%,transparent) 45%,transparent)}
+.lt-inti{z-index:4;left:-9px;top:-9px;width:18px;height:18px;border-radius:50%;border:2.5px solid var(--lt-c)}
+.lt-inti::before{content:"";position:absolute;left:50%;top:50%;width:6px;height:6px;margin:-3px;border-radius:50%;background:var(--lt-c);opacity:.6}
+.lt-inti::after{content:"";position:absolute;inset:1.5px;border-radius:50%;background:var(--kunyit);opacity:0}
+.lentera-tanda.nyala .lt-cahaya,.lentera-tanda.nyala .lt-inti::after{opacity:1}
+.gerak .lt-cahaya,.gerak .lt-inti::after{transition:opacity .6s var(--ease-menyala)}
+/* Ranting zaitun (C): tumbuh ke KIRI benang (ke tepi layar), tidak pernah ke kanan (area teks). Satu ruas per lentera
+   yang menyala: batang (stroke-dashoffset) + 2–5 daun lancip (scale 0→1 dari pangkal), makin ke bawah makin lebat;
+   Donasi (zaitun) berbuah. Lebar = margin kiri − 6px (maks 106px); disembunyikan bila margin < ±40px (layar < 1296px). */
+.lt-ranting{display:none;position:absolute;z-index:1;right:3px;top:-24px;width:min(106px,calc(var(--benang-x) - 6px));height:auto;overflow:visible;
+  --lt-daun:#7FA33F;--lt-batang:color-mix(in srgb,var(--lt-c) 70%,transparent)}
+@media (min-width:1296px){.lt-ranting{display:block}}
+.why .lt-ranting{--lt-daun:#A9CF6E}
+.cost-blok .lt-ranting{--lt-daun:#9CC562}
+.lt-ranting .batang{fill:none;stroke:var(--lt-batang);stroke-width:2.2;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1}
+.lt-ranting .daun{fill:var(--lt-daun);transform-box:fill-box;transform-origin:0% 50%;transform:scale(0)}
+.lt-ranting .buah{fill:#3B2A3F;stroke:#F3EFE8;stroke-width:.8;transform-box:fill-box;transform-origin:50% 0%;transform:scale(0)}
+.lentera-tanda.nyala .lt-ranting .batang{stroke-dashoffset:0}
+.lentera-tanda.nyala .lt-ranting .daun,.lentera-tanda.nyala .lt-ranting .buah{transform:none}
+.gerak .lt-ranting .batang{transition:stroke-dashoffset .6s var(--ease-muncul) .1s}
+.gerak .lt-ranting .daun,.gerak .lt-ranting .buah{transition:transform .5s var(--ease-muncul) var(--td,.3s)}
+/* Garis tenun (D): di tiap pergantian section (tepat setelah sebuah section, menembus pembatas apa pun), benang
+   "menjahit" sambungannya. Desktop: dari benang keluar ke area konten ±182px lalu kembali (tinggi 38px, di zona padding
+   antar-section — tidak melintasi teks). HP: garis tenun mendatar di antara section, selebar layar − 32px. Jahitan
+   putus-putus; digambar SEKALI (mask stroke-dashoffset) saat masuk layar. Warna = warna benang di titik itu. */
+.tenun{position:absolute;z-index:2;pointer-events:none;overflow:visible;color:var(--tenun-c,#10163A)}
+footer.fase>.tenun{--tenun-c:#F3EFE8}
+.tenun .jahit{fill:none;stroke:currentColor;stroke-width:2.4;stroke-dasharray:7 5;stroke-linecap:round;opacity:.85}
+.tenun .jahit-2{stroke-width:1.2;stroke-dasharray:3 9;stroke-dashoffset:6;opacity:.6}
+.tenun mask path{fill:none;stroke:#fff;stroke-width:12;stroke-dasharray:1;stroke-dashoffset:0}
+.gerak .tenun:not(.tergambar) mask path{stroke-dashoffset:1}
+.gerak .tenun mask path{transition:stroke-dashoffset 1.2s var(--ease-menyala)}
+.tenun-d{display:none;top:4px;left:calc(var(--benang-x) + 4px);width:var(--jangkau,186px);height:40px}
+.tenun-d .jahit{vector-effect:non-scaling-stroke}
+.tenun-m{display:block;top:8px;left:16px;width:calc(100% - 32px);height:22px}
+.tenun-m .jahit{vector-effect:non-scaling-stroke}
+@media (min-width:900px){.tenun-d{display:block}.tenun-m{display:none}}
+/* HP: di Tim → FAQ kata Arab raksasa sudah menjadi pembatas; tenun mendatar akan melintasi hurufnya */
+.batas-kata>.tenun-m{display:none}
+/* HP: titik di garis progres atas, posisinya = progres saat judul section di tengah layar */
+.benang .lt-hp{display:none}
+@media (max-width:899px){
+  /* HP: titik lentera 11px di garis progres atas (cincin gelap → isi kunyit saat menyala) */
+  .benang .lt-hp{display:block;top:50%;width:11px;height:11px;margin:-5.5px 0 0 -5.5px;border-radius:50%;background:var(--paper);border:2px solid color-mix(in srgb,currentColor 75%,transparent)}
+  .benang .lt-hp::after{content:"";position:absolute;inset:0;border-radius:50%;background:var(--kunyit);opacity:0}
+  .benang .lt-hp.nyala::after{opacity:1}
+  .gerak .benang .lt-hp::after{transition:opacity .7s var(--ease-menyala)}
+}
+
+/* --- Pustaka ornamen (lihat CLAUDE.md). Warna = currentColor atau token; tidak ada warna tertanam. --- */
+.orn-band{display:block;height:14px;background:currentColor;-webkit-mask:var(--orn-band) 0 50%/28px 14px repeat-x;mask:var(--orn-band) 0 50%/28px 14px repeat-x}
+.orn-net{position:absolute;inset:0;pointer-events:none;background:currentColor;opacity:.05;-webkit-mask:var(--orn-net) 0 0/20px 20px repeat;mask:var(--orn-net) 0 0/20px 20px repeat}
+.orn-leaf{display:inline-block;flex:none;width:1em;height:1em;vertical-align:-.12em;background:var(--zamrud-ink);-webkit-mask:var(--orn-leaf) center/contain no-repeat;mask:var(--orn-leaf) center/contain no-repeat}
+.orn-list{list-style:none;padding:0;margin:0;display:grid;gap:.6em}
+.orn-list>li{position:relative;padding-left:1.6em}
+.orn-list>li::before{content:"";position:absolute;left:0;top:.3em;width:1em;height:1em;background:var(--zamrud-ink);-webkit-mask:var(--orn-leaf) center/contain no-repeat;mask:var(--orn-leaf) center/contain no-repeat}
+.orn-lentera{display:inline-block;flex:none;width:1.2em;height:1.2em;background:var(--lentera);-webkit-mask:var(--orn-lentera) center/contain no-repeat;mask:var(--orn-lentera) center/contain no-repeat}
+.orn-seed{display:inline-block;flex:none;width:.45em;height:.6em;background:currentColor;-webkit-mask:var(--orn-seed) center/contain no-repeat;mask:var(--orn-seed) center/contain no-repeat}
+/* ORNAMEN v2 MULAI — keffiyeh sungguhan, semangka, bingkai lengkung. Berkas di assets/ornaments/ (dibuat
+   tools/make-ornaments.mjs); pola satu warna dipakai sebagai masker, jadi warnanya dari token. Lihat CLAUDE.md. */
+/* warna kain: hitam (bawaan) / merah / hijau; latar kain = --kain-dasar (putih) */
+.kain-hitam{--kain:var(--keffiyeh)}
+.kain-merah{--kain:var(--semangka-tua)}
+.kain-hijau{--kain:var(--kulit)}
+/* kain: bidang berpola keffiyeh. Bawaan = jaring (fishnet); --kotak = houndstooth. Ukuran ubin lewat --kain-ubin */
+.orn-kain{position:relative;isolation:isolate;background:var(--kain-dasar,var(--putih))}
+.orn-kain::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:var(--kain,var(--keffiyeh));
+  -webkit-mask:url(assets/ornaments/kain-jaring.svg) 0 0/var(--kain-ubin,24px) repeat;mask:url(assets/ornaments/kain-jaring.svg) 0 0/var(--kain-ubin,24px) repeat}
+.orn-kain--kotak{--kain-ubin:12px}
+.orn-kain--kotak::before{-webkit-mask-image:url(assets/ornaments/kain-kotak.svg);mask-image:url(assets/ornaments/kain-kotak.svg)}
+/* pita tebal pembatas section (tepi kain: garis, ranting zaitun, gelombang, zigzag), berulang tanpa sambungan.
+   Tinggi 24–48px lewat --pita; --sempit = versi 24px. Warna = --kain (atau currentColor bila tanpa kelas warna) */
+.orn-band--tebal,.orn-band--sempit{height:var(--pita,40px);background:var(--kain,currentColor);
+  -webkit-mask:url(assets/ornaments/pita.svg) 0 50%/auto 100% repeat-x;mask:url(assets/ornaments/pita.svg) 0 50%/auto 100% repeat-x}
+.orn-band--sempit{--pita:24px;-webkit-mask-image:url(assets/ornaments/pita-sempit.svg);mask-image:url(assets/ornaments/pita-sempit.svg)}
+/* tekstur latar tipis (6–12%): jaring keffiyeh. Pakai bersama .orn-net (absolute, inset 0) */
+.orn-net--kain{opacity:var(--orn-alpha,.08);background:var(--kain,currentColor);
+  -webkit-mask:url(assets/ornaments/kain-jaring.svg) 0 0/24px 24px repeat;mask:url(assets/ornaments/kain-jaring.svg) 0 0/24px 24px repeat}
+/* tepi bingkai keffiyeh (border-image 9-slice; warna dari berkas karena border-image tidak bisa currentColor) */
+.orn-bingkai{border:var(--bingkai,18px) solid transparent;border-image:url(assets/ornaments/bingkai-hitam.svg) 20 round}
+.orn-bingkai.kain-merah{border-image-source:url(assets/ornaments/bingkai-merah.svg)}
+.orn-bingkai.kain-hijau{border-image-source:url(assets/ornaments/bingkai-hijau.svg)}
+/* semangka geometris (warna tertanam, datar). Boleh menjorok keluar layar: --jorok (mis. -30%) menggeser ke samping */
+.orn-slice{display:block;width:var(--slice,clamp(160px,24vw,320px));aspect-ratio:200/104;pointer-events:none;
+  background:url(assets/ornaments/semangka-setengah.svg) center/contain no-repeat;translate:var(--jorok,0) 0;rotate:var(--putar,0deg)}
+.orn-slice--segitiga{aspect-ratio:120/140;background-image:url(assets/ornaments/semangka-segitiga.svg)}
+.orn-seeds{position:absolute;inset:0;pointer-events:none;background:var(--biji,var(--keffiyeh));opacity:var(--orn-alpha,.12);
+  -webkit-mask:url(assets/ornaments/semangka-biji.svg) 0 0/160px 160px repeat;mask:url(assets/ornaments/semangka-biji.svg) 0 0/160px 160px repeat}
+/* gerak semangka (tertaut scroll, hanya bila .gerak & browser mendukung view timeline; selain itu diam):
+   bawaan = berayun kecil ±8°; --buka = "terbuka" dari miring & sedikit mengecil ke posisi tegak */
+@keyframes slice-ayun{from{rotate:calc(var(--putar,0deg) - 8deg)}to{rotate:calc(var(--putar,0deg) + 8deg)}}
+@keyframes slice-buka{from{rotate:calc(var(--putar,0deg) - 26deg);scale:.88}to{rotate:var(--putar,0deg);scale:1}}
+@supports (animation-timeline: view()){
+  .gerak .orn-slice{animation:slice-ayun linear both;animation-timeline:view();animation-range:cover 0% cover 100%}
+  .gerak .orn-slice--buka{animation-name:slice-buka;animation-range:entry 0% cover 45%}
+}
+@media (prefers-reduced-motion: reduce){.orn-slice{animation:none!important}}
+/* bingkai lengkung foto: lengkung bulat (arkade Al-Aqsa, bawaan) atau --lancip (mihrab), garis ganda = currentColor.
+   Rasio tetap 4:5 supaya lengkung tidak terdistorsi. Isi: <img> atau <picture> */
+.frame-arch{position:relative;display:block;margin:0;aspect-ratio:4/5;color:var(--ink)}
+.frame-arch picture{display:block;height:100%}
+.frame-arch img{display:block;width:100%;height:100%;object-fit:cover;
+  -webkit-mask:url(assets/ornaments/lengkung-bulat-isi.svg) 0 0/100% 100% no-repeat;mask:url(assets/ornaments/lengkung-bulat-isi.svg) 0 0/100% 100% no-repeat}
+.frame-arch::after{content:"";position:absolute;inset:0;pointer-events:none;background:currentColor;
+  -webkit-mask:url(assets/ornaments/lengkung-bulat-garis.svg) 0 0/100% 100% no-repeat;mask:url(assets/ornaments/lengkung-bulat-garis.svg) 0 0/100% 100% no-repeat}
+.frame-arch--lancip img{-webkit-mask-image:url(assets/ornaments/lengkung-lancip-isi.svg);mask-image:url(assets/ornaments/lengkung-lancip-isi.svg)}
+.frame-arch--lancip::after{-webkit-mask-image:url(assets/ornaments/lengkung-lancip-garis.svg);mask-image:url(assets/ornaments/lengkung-lancip-garis.svg)}
+/* ORNAMEN v2 SELESAI */
+
+/* --- PEMBATAS ANTAR-SECTION: kosakata bervariasi (tabel di CLAUDE.md). Tidak ada dua jenis sama berurutan; rajut
+   (pita keffiyeh) hanya SATU kali (Biaya → Bergabung); hijau–jaring–merah (.kufiyah) hanya di bawah hero.
+   Animasi masuk sekali lewat IntersectionObserver [data-muncul] (opacity/transform/stroke-dashoffset). Tanpa .gerak
+   (reduced-motion / tanpa JS) semuanya tampil diam & utuh. --- */
+/* (a) tepi mihrab: lengkung lancip di tengah, bahu datar; warna = latar section berikutnya; garis tipis tergambar */
+/* catatan: garis memakai pathLength=1 tanpa non-scaling-stroke (non-scaling membuat dasharray dihitung dalam px layar) */
+.batas-mihrab{display:block;width:100%;height:clamp(56px,9vw,130px);margin-top:-1px}
+.batas-mihrab .isi{fill:var(--batas-isi)}
+.batas-mihrab .garis{fill:none;stroke:var(--batas-garis);stroke-width:2.6;stroke-dasharray:1;stroke-dashoffset:0}
+.gerak .batas-mihrab[data-muncul]{transform:none}
+.gerak .batas-mihrab[data-muncul]:not(.is-in){opacity:1}
+.gerak .batas-mihrab .garis{transition:stroke-dashoffset 1.6s var(--ease-menyala) .2s}
+.gerak .batas-mihrab:not(.is-in) .garis{stroke-dashoffset:1}
+/* (b) tepi biji semangka: garis batas tegas terang | merah, biji tersebar menyeberangi garis */
+.batas-biji{position:relative;height:72px;background:linear-gradient(var(--fase-bg) 50%,var(--semangka-tua) 50%)}
+.batas-biji i{position:absolute;left:0;right:0;height:36px;--orn-alpha:1}
+.batas-biji .atas{top:0;--biji:var(--semangka-tua);-webkit-mask-size:132px 132px;mask-size:132px 132px;-webkit-mask-position:0 -18px;mask-position:0 -18px}
+.batas-biji .bawah{top:36px;--biji:var(--keffiyeh);opacity:.55;-webkit-mask-size:132px 132px;mask-size:132px 132px;-webkit-mask-position:66px -70px;mask-position:66px -70px}
+.gerak .batas-biji[data-muncul]{transform:none}
+.gerak .batas-biji i{transition:transform .9s var(--ease-muncul),opacity .9s var(--ease-muncul)}
+.gerak .batas-biji:not(.is-in) .atas{transform:translateY(-10px);opacity:0}
+.gerak .batas-biji:not(.is-in) .bawah{transform:translateY(10px);opacity:0}
+/* (c) satu garis daun zaitun yang tergambar dari tengah ke tepi */
+.batas-daun{display:flex;align-items:center;justify-content:center;gap:14px;height:24px;color:var(--zamrud-ink)}
+.batas-daun svg:not(.tenun){flex:1;max-width:min(38vw,420px);height:2px;overflow:visible}
+.batas-daun line{stroke:currentColor;stroke-width:1.5;stroke-dasharray:1;stroke-dashoffset:0}
+.batas-daun .kiri line{transform-origin:right}
+.batas-daun .orn-leaf{width:22px;height:22px}
+.gerak .batas-daun[data-muncul]{transform:none}
+.gerak .batas-daun line{transition:stroke-dashoffset 1.2s var(--ease-menyala) .25s}
+.gerak .batas-daun:not(.is-in) line{stroke-dashoffset:1}
+/* (d) kata Arab raksasa yang menyeberangi batas dua section (tipografi sebagai pembatas; dekoratif) */
+.batas-kata{position:relative;height:clamp(64px,10vw,150px);overflow:visible;pointer-events:none}
+.batas-kata span{position:absolute;left:50%;top:50%;translate:-50% -54%;font-family:var(--f-ar-display);font-weight:700;font-size:clamp(5.5rem,17vw,13rem);
+  line-height:1;white-space:nowrap;color:transparent;-webkit-text-stroke:1.5px color-mix(in srgb,var(--zamrud-ink) 55%,transparent);
+  user-select:none;-webkit-user-select:none}
+.gerak .batas-kata span{transition:opacity 1s var(--ease-muncul),scale 1s var(--ease-muncul)}
+.gerak .batas-kata[data-muncul]{transform:none}
+.gerak .batas-kata[data-muncul]:not(.is-in){opacity:1}
+.gerak .batas-kata:not(.is-in) span{opacity:0;scale:.94}
+
+/* --- Primitif gerak. .gerak dipasang JS hanya bila gerak diizinkan (bukan reduced-motion) --- */
+/* muncul: memudar + naik ≤ 12px, sekali */
+.gerak [data-muncul]{transition:opacity var(--dur-muncul) var(--ease-muncul) var(--d,0s),transform var(--dur-muncul) var(--ease-muncul) var(--d,0s)}
+.gerak [data-muncul]:not(.is-in){opacity:0;transform:translateY(12px)}
+/* pembatas antar-section tidak bergeser (geseran 12px membuat celah di benang); animasinya sendiri ada di bloknya */
+.gerak :is(.batas-mihrab,.batas-biji,.batas-daun,.batas-kata)[data-muncul]:not(.is-in){transform:none;opacity:1}
+/* tergambar: garis terbentang mengikuti scroll (view timeline; cadangan JS mengisi --t). Tanpa .gerak: utuh */
+[data-tergambar]{clip-path:inset(0 calc(100% - var(--t,1) * 100%) 0 0)}
+@keyframes tergambar{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0)}}
+@supports (animation-timeline: view()){.gerak [data-tergambar]{animation:tergambar linear both;animation-timeline:view();animation-range:entry 10% cover 50%}}
+/* judul section [data-judul]: kata muncul berurutan dengan blur-in (permintaan pemilik; varian "muncul" untuk judul).
+   JS memecah judul per KATA (bukan huruf: huruf Arab bersambung) jadi span .jk inline-block, spasi tetap berupa teks.
+   Keadaan tersembunyi hanya lewat kelas .judul-tunggu yang dipasang JS pada judul yang belum terlihat saat halaman dibuka;
+   tanpa JS / tanpa IntersectionObserver / reduced-motion → judul tampil utuh. Hanya opacity, transform, filter. */
+.jk{display:inline-block}
+.judul-tunggu .jk{opacity:0;filter:blur(6px);transform:translateY(.55em)}
+.judul-jalan .jk{transition:opacity .8s cubic-bezier(.2,.8,.2,1) var(--jd,0ms),transform .8s cubic-bezier(.2,.8,.2,1) var(--jd,0ms),filter .8s cubic-bezier(.2,.8,.2,1) var(--jd,0ms);will-change:opacity,transform,filter}
+@media (prefers-reduced-motion: reduce){.judul-tunggu .jk{opacity:1;filter:none;transform:none}}
+/* menyala: cahaya hangat menyala saat terlihat, padam di luar layar */
+.menyala{position:relative}
+.menyala::after{content:"";position:absolute;inset:-60%;border-radius:50%;pointer-events:none;
+  background:radial-gradient(closest-side,color-mix(in srgb,var(--lentera) 50%,transparent),transparent);transition:opacity var(--dur-menyala) var(--ease-menyala)}
+.gerak .menyala:not(.is-lit)::after{opacity:0}
+
+/* ===== NAV ===== */
+.nav{position:fixed;top:calc(env(safe-area-inset-top,0px) + 12px);left:0;right:0;z-index:50;pointer-events:none;transition:transform .7s cubic-bezier(.22,1,.36,1),opacity .5s ease}
+/* sembunyi selama hero & setelah scroll ke bawah agak jauh; tetap muncul bila menerima fokus keyboard */
+.nav.is-hidden{transform:translateY(calc(-100% - 24px));opacity:0}
+.nav.is-hidden:focus-within{transform:none;opacity:1}
+@media (prefers-reduced-motion: reduce){.nav{transition:opacity .2s}.nav.is-hidden{transform:none}}
+.skip{position:fixed;left:16px;top:12px;z-index:200;padding:12px 18px;border-radius:999px;background:var(--kunyit);color:var(--kunyit-ink);font-weight:800;text-decoration:none;transform:translateY(-200%)}
+.skip:focus{transform:none}
+main section[id]:not(#hero){scroll-margin-top:calc(env(safe-area-inset-top,0px) + 84px)}
+.nav .wrap{display:flex;justify-content:center}
+.nav-bar{pointer-events:auto;display:flex;align-items:center;gap:6px;padding:6px 6px 6px 18px;border-radius:999px;background:color-mix(in srgb,var(--surface) 58%,transparent);backdrop-filter:blur(8px) saturate(1.8);-webkit-backdrop-filter:blur(8px) saturate(1.8);border:1px solid color-mix(in srgb,#fff 45%,transparent);box-shadow:0 1px 0 color-mix(in srgb,#fff 50%,transparent) inset,0 8px 28px -14px rgba(16,26,61,.35);width:100%;max-width:880px;justify-content:space-between}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .nav-bar{border-color:rgba(255,255,255,.12);box-shadow:0 1px 0 rgba(255,255,255,.1) inset,0 8px 28px -14px rgba(0,0,0,.6)}}
+:root[data-theme="dark"] .nav-bar{border-color:rgba(255,255,255,.12);box-shadow:0 1px 0 rgba(255,255,255,.1) inset,0 8px 28px -14px rgba(0,0,0,.6)}
+.brand{display:flex;align-items:center;text-decoration:none;border-radius:8px}
+.brand img{display:block;height:30px;width:auto}
+/* logo resmi: versi warna di latar terang, versi putih di latar gelap */
+.logo-dark{display:none!important}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .logo-light{display:none!important}:root:not([data-theme="light"]) .logo-dark{display:block!important}}
+:root[data-theme="dark"] .logo-light{display:none!important}
+:root[data-theme="dark"] .logo-dark{display:block!important}
+.nav-links{display:none;gap:2px;list-style:none;margin:0;padding:0}
+.nav-links a{display:block;padding:.55em .85em;border-radius:999px;text-decoration:none;font-weight:600;font-size:.92rem;color:var(--ink-soft);transition:color .2s,background-color .2s}
+.nav-links a:hover{color:var(--ink);background:color-mix(in srgb,var(--ink) 7%,transparent)}
+.nav .btn{min-height:42px;padding:.5em 1.1em;font-size:.92rem;box-shadow:none}
+@media (min-width:900px){.nav-links{display:flex}}
+
+/* ===== HERO: gelap → terang lewat scroll. Dua varian visual (lentera, 3D) berbagi copy dan alur yang sama ===== */
+.hero{--night:#040820;--hero-fg:#F3F5FC;--hero-soft:rgba(243,245,252,.78);--sun:#F2C14E;
+  position:relative;height:220vh;background:var(--night);color:var(--hero-fg)}
+.hero-stage{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;isolation:isolate}
+.hero-canvas{position:absolute;inset:0;z-index:-2}
+.hero-canvas canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.hero-scrim{position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(180deg,rgba(4,8,32,.55) 0,rgba(4,8,32,.22) 70px,transparent 130px),radial-gradient(120% 90% at 0% 100%,rgba(4,8,32,.84) 0%,rgba(4,8,32,.74) 45%,rgba(4,8,32,.4) 70%,transparent 92%)}
+@media (max-width:899px){.hero-scrim{background:linear-gradient(180deg,rgba(4,8,32,.62) 0,rgba(4,8,32,.3) 70px,transparent 150px),linear-gradient(0deg,rgba(4,8,32,.82) 0%,rgba(4,8,32,.55) 30%,rgba(4,8,32,.1) 52%,transparent 60%)}}
+/* fajar lebih terang: scrim hangat ekstra di babak 3 supaya teks putih tetap terbaca */
+.hero-scrim::after{content:"";position:absolute;inset:0;background:inherit;opacity:clamp(0,calc((var(--p,0) - .6)*2.5),.6)}
+@media (max-width:899px){.hero-scrim::after{opacity:clamp(0,calc((var(--p,0) - .6)*2.5),.9)}}
+.hero-copy{position:relative;height:100%;pointer-events:none}
+/* identitas tetap di pojok kiri atas hero (bukan tautan); scrim atas menjaga keterbacaannya saat fajar */
+.hero-id{position:absolute;left:max(16px,env(safe-area-inset-left,0px));top:calc(env(safe-area-inset-top,0px) + 18px);margin:0;display:flex;align-items:center;gap:10px;text-shadow:0 1px 12px rgba(4,8,32,.6)}
+.hero-id{flex-direction:column;align-items:flex-start;gap:6px}
+.hero-id img{display:block;height:clamp(30px,2.2rem,40px);width:auto;filter:drop-shadow(0 1px 8px rgba(4,8,32,.5))}
+.hero-id small{display:block;font-size:.72rem;font-weight:600;color:var(--hero-soft);letter-spacing:.01em}
+@media (min-width:720px){.hero-id{left:max(40px,env(safe-area-inset-left,0px));top:calc(env(safe-area-inset-top,0px) + 26px)}}
+/* teks babak: kiri-bawah, memudar di tempat (tanpa geser) */
+.beat{--bottom:calc(env(safe-area-inset-bottom,0px) + clamp(120px,17vh,168px));position:absolute;bottom:var(--bottom);margin:0;opacity:0;font-family:var(--f-display);font-weight:600;font-size:clamp(2.2rem,1.3rem + 3.8vw,4.9rem);line-height:1.04;letter-spacing:-.015em;text-shadow:0 1px 2px rgba(4,8,32,.45),0 2px 28px rgba(4,8,32,.6);text-wrap:balance;will-change:opacity}
+.beat-0{opacity:1}
+.beat{left:max(16px,env(safe-area-inset-left,0px));right:max(16px,env(safe-area-inset-right,0px))}
+@media (min-width:720px){.beat{left:max(40px,env(safe-area-inset-left,0px));right:auto;width:min(48vw,760px)}}
+.scroll-cue{position:absolute;left:50%;bottom:calc(env(safe-area-inset-bottom,0px) + 60px);translate:-50% 0;display:grid;justify-items:center;gap:8px;font-size:.85rem;font-weight:700;letter-spacing:.04em;color:#fff;text-shadow:0 1px 10px rgba(4,8,32,.9);transition:opacity .5s}
+.scroll-cue i{width:3px;height:44px;box-shadow:0 0 12px rgba(242,193,78,.6);border-radius:2px;background:linear-gradient(var(--sun),transparent);transform-origin:top;animation:cue 2s var(--ease) infinite}
+@keyframes cue{0%{transform:scaleY(0)}50%{transform:scaleY(1);transform-origin:top}50.1%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+.hero-meter{position:absolute;right:max(16px,env(safe-area-inset-right,0px));top:50%;translate:0 -50%;width:3px;height:min(34vh,260px);border-radius:3px;background:rgba(243,245,252,.18);overflow:hidden}
+.hero-meter::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,var(--sun),#FFE7B0);transform:scaleY(var(--p,0));transform-origin:bottom}
+@media (min-width:720px){.hero-meter{right:max(28px,env(safe-area-inset-right,0px))}}
+/* keffiyeh × semangka: kulit hijau, putih, jaring keffiyeh, daging merah berbiji */
+.kufiyah{position:relative;height:42px;
+  background:
+    radial-gradient(ellipse 1.8px 2.8px at 50% 50%,#151515 98%,transparent) 0 34px/22px 7px repeat-x,
+    linear-gradient(#149954 0 6px,#F7F7F2 6px 8px,transparent 8px 32px,#E4312B 32px),
+    repeating-linear-gradient(45deg,#151515 0 1.4px,transparent 1.4px 8px),
+    repeating-linear-gradient(-45deg,#151515 0 1.4px,transparent 1.4px 8px),
+    #F7F7F2}
+/* pembanding varian (alat review) */
+.hero-switch{position:fixed;left:max(16px,env(safe-area-inset-left,0px));bottom:calc(env(safe-area-inset-bottom,0px) + 16px);z-index:45;display:flex;align-items:center;gap:4px;padding:5px;border-radius:999px;background:rgba(10,14,40,.82);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:#F3F5FC;box-shadow:0 10px 30px -10px rgba(0,0,0,.5);font-size:.82rem}
+.hero-switch span{padding:0 8px 0 10px;font-weight:600;opacity:.7}
+.hero-switch button{border:0;background:transparent;color:inherit;font-weight:700;padding:8px 12px;border-radius:999px;cursor:pointer;min-height:36px}
+.hero-switch button[aria-pressed="true"]{background:#F2C14E;color:#2A1E00}
+/* pembanding hanya relevan selama hero; di luar hero disembunyikan (juga mengurangi elemen fixed di tepi bawah) */
+.hero-switch{transition:opacity .3s,visibility .3s}.hero-switch.is-away{opacity:0;visibility:hidden;pointer-events:none}
+@media (max-width:520px){.hero-switch span{display:none}.hero-switch button{padding:8px 10px}.hero-switch .long{display:none}}
+/* ===== Lentera HD: foto malam/fajar. Teks di area langit (atas): HP di 8–45% tinggi layar, desktop kiri-atas ===== */
+.hd-grain{position:absolute;inset:0;pointer-events:none;opacity:.06;mix-blend-mode:overlay;background-size:160px}
+.hd-grain[hidden]{display:none}
+.hero[data-text="top"] .beat{bottom:auto;top:calc(env(safe-area-inset-top,0px) + clamp(112px,16vh,156px))}
+@media (orientation: portrait){.hero[data-text="top"] .beat{top:calc(env(safe-area-inset-top,0px) + clamp(88px,11.5svh,128px))}}
+@media (orientation: portrait) and (min-width:600px){.hero[data-text="top"] .beat{right:max(40px,env(safe-area-inset-right,0px));width:auto;max-width:620px}}
+/* scrim: pita tipis di atas (wordmark) + gradasi lebar & lembut dari pojok kiri-atas (seperti langit yang lebih gelap di
+   sisi itu, bukan bercak) selama teks putih babak 1–2 tampil; memudar habis sebelum babak 3. Babak 3 jatuh di langit
+   fajar yang terang, jadi teksnya biru tua (kontras ≥ 6:1) tanpa penggelapan sama sekali */
+.hero[data-text="top"] .hero-scrim{background:linear-gradient(180deg,rgba(4,8,32,.6) 0%,rgba(4,8,32,.32) 7%,transparent 13%)}
+.hero[data-text="top"] .hero-scrim::after{display:block;opacity:calc(1 - clamp(0,(var(--p,0) - .67)*7,1));
+  background:radial-gradient(ellipse 95% 80% at 0% 18%,rgba(4,8,32,.7) 0%,rgba(4,8,32,.6) 30%,rgba(4,8,32,.32) 58%,rgba(4,8,32,.1) 78%,transparent 100%)}
+@media (orientation: portrait){.hero[data-text="top"] .hero-scrim::after{background:linear-gradient(180deg,rgba(4,8,32,.62) 0%,rgba(4,8,32,.56) 22%,rgba(4,8,32,.3) 36%,rgba(4,8,32,.08) 46%,transparent 54%)}}
+.hero[data-text="top"] .beat:not(.beat-2){text-shadow:0 1px 2px rgba(4,8,32,.55),0 2px 22px rgba(4,8,32,.75),0 0 60px rgba(4,8,32,.55)}
+.hero[data-text="top"] .beat-2{color:#10163A;text-shadow:0 1px 1px rgba(255,240,224,.35),0 2px 30px rgba(255,236,214,.6)}
+/* editor titik cahaya (?edit-spots) — alat kerja pemilik, bukan untuk pengunjung */
+.hd-editing .hero-copy{opacity:.15}
+.hd-edit-layer{position:absolute;inset:0;cursor:crosshair}
+.hd-dot{position:absolute;width:calc(14px*var(--s,1) + 6px);aspect-ratio:1;translate:-50% -50%;border-radius:50%;border:2px solid #FFC21A;background:rgba(255,194,26,.25);padding:0;cursor:pointer}
+.hd-dot:hover{background:#FF7A6E;border-color:#fff}
+.hd-dot[data-kind="w"]{border-color:#7FC8FF}.hd-dot[data-kind="a"]{border-color:#FF9F43}.hd-dot[data-kind="g"]{border-color:#9BE15D}.hd-dot[data-kind="c"]{border-color:#C9B6FF}
+.hd-edit-panel select{font:inherit;padding:4px 6px;border-radius:8px;margin-left:6px}
+.hd-edit-panel{position:fixed;right:16px;top:16px;z-index:300;display:grid;gap:8px;max-width:280px;padding:14px 16px;border-radius:14px;background:rgba(10,14,40,.92);color:#F3F5FC;font-size:.85rem;box-shadow:0 10px 30px -10px rgba(0,0,0,.6)}
+.hd-edit-panel button{border:0;border-radius:999px;padding:8px 12px;font-weight:700;background:#F2C14E;color:#2A1E00;cursor:pointer}
+.hd-edit-panel button[data-a="reset"]{background:transparent;color:inherit;box-shadow:inset 0 0 0 1.5px currentColor}
+.hd-edit-panel textarea{width:100%;height:120px;font:12px/1.4 ui-monospace,monospace}
+.hero-loading{position:absolute;inset:0;display:grid;place-items:center;font-weight:600;color:var(--hero-soft);font-size:.9rem;z-index:-1}
+@media (prefers-reduced-motion: reduce){.scroll-cue i{animation:none;transform:none}}
+
+/* ===== PENGANTAR =====
+   Tiga fragmen berirama (teks persis dari pemilik): baris 1 ringan & besar ("Arab" hijau kulit, "Inggris" biru, tebal),
+   baris 2–3 tebal miring dan jauh lebih besar ("Nirlaba." merah). Hierarki dari ukuran & ketebalan, warna hanya penegas.
+   Kata menyala satu per satu (gerak "menyala"): --p (0..1) dianimasikan view timeline kalimat (tanpa pin), cadangan JS di
+   skrip. Nilai awal 1 = semua kata penuh (reduced-motion / tanpa JS). Seni: foto Al-Aqsa berbingkai lengkung di kanan,
+   irisan semangka menjorok dari tepi layar di belakang foto. Ke Kenapa: hanya pergeseran warna (gradasi di atas blok hijau). */
+@property --p{syntax:'<number>';inherits:true;initial-value:1}
+.intro{position:relative;isolation:isolate;overflow:clip;padding-bottom:0}
+.intro-grid{position:relative;z-index:1;display:grid;gap:clamp(40px,6vw,72px);padding-bottom:clamp(64px,8vw,112px)}
+.intro-kalimat{font-family:var(--f-display);letter-spacing:-.02em}
+.intro-l1{display:block;font-weight:300;font-size:clamp(2.2rem,1.1rem + 4vw,4.9rem);line-height:1.06;max-width:10.5em;text-wrap:balance}
+.intro-l1 .k-ar,.intro-l1 .k-en{font-weight:700}
+.intro-l2,.intro-l3{display:block;font-weight:700;font-style:italic;font-size:clamp(3.4rem,1.5rem + 7.4vw,8.6rem);line-height:.92;letter-spacing:-.035em}
+.intro-l2{margin-top:.22em}
+/* tiap kata: --w = seberapa menyala (jendela 1,5 kata, lebih tegas dari sebelumnya), --g = pendar lentera, puncak di
+   tengah transisi. Redup = campuran warna kata dengan latar, ≥ 3:1 (dihitung, lihat CLAUDE.md); penuh ≥ 6:1. */
+.k{--w:clamp(0,(var(--p) * (var(--n) + 1.5) - var(--i)) / 1.5,1);--g:calc(min(var(--w),1 - var(--w)) * 2);--warna:var(--ink);--redup:48%;
+  color:color-mix(in srgb,var(--warna) calc(var(--redup) + (100% - var(--redup)) * var(--w)),var(--fase-bg));
+  text-shadow:0 0 .3em color-mix(in srgb,var(--lentera) calc(var(--g) * 95%),transparent)}
+.k-en{--warna:var(--lazuardi-ink);--redup:54%}   /* biru logo #1724C0 */
+.k-ar{--warna:var(--zamrud-ink);--redup:68%}     /* hijau kulit #1E6B3A (hijau logo asli hanya 2,8:1, tidak boleh jadi teks) */
+.k-merah{--warna:var(--semangka-tua);--redup:62%} /* merah tua #B3202E (merah semangka terang 4,0:1 < 4,5) */
+@keyframes intro-nyala{from{--p:0}to{--p:1}}
+@supports (animation-timeline: view()){.gerak .intro-kalimat{animation:intro-nyala linear both;animation-timeline:view();animation-range:cover 18% cover 50%}}
+/* satu baris kecil tanpa kotak: daun zaitun + teks + garis keffiyeh tipis */
+.intro-yayasan{display:flex;align-items:center;gap:.6em;margin-top:clamp(28px,4vw,48px);font-size:var(--step--1);font-weight:600;color:var(--ink-soft)}
+/* tautan Yayasan (Pengantar & footer): garis bawah jelas, fokus keyboard kunyit (global :focus-visible) */
+.tautan-yayasan{color:var(--ink);text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:.22em;text-decoration-color:color-mix(in srgb,currentColor 70%,transparent)}
+.tautan-yayasan:hover{text-decoration-thickness:2.5px;text-decoration-color:currentColor}
+.intro-yayasan .orn-band{flex:1;min-width:40px;max-width:200px;height:10px;color:var(--semangka-tua);-webkit-mask-size:20px 10px;mask-size:20px 10px}
+.intro-seni{justify-self:end;width:min(72vw,320px)}
+.intro-seni .frame-arch{color:var(--kulit)}
+/* irisan semangka: di belakang foto (grid z-index 1), menjorok keluar tepi layar */
+.intro-slice{position:absolute;z-index:0;left:0;bottom:clamp(96px,14vw,150px);--slice:min(80vw,380px);--jorok:-36%;--putar:14deg}
+@media (min-width:900px){
+  .intro-grid{grid-template-columns:repeat(12,minmax(0,1fr));align-items:center}
+  .intro-teks{grid-column:1/9}
+  .intro-seni{grid-column:9/13;width:100%;max-width:400px}
+  .intro-slice{left:auto;right:0;bottom:clamp(90px,9vw,150px);--slice:clamp(300px,36vw,560px);--jorok:40%;--putar:-16deg}
+}
+
+/* ===== KENAPA LCDU: blok hijau kulit penuh lebar, teks putih, aksen merah =====
+   Tepi atas = gradasi dari putih hangat (tanpa ornamen); tepi bawah = tepi mihrab ke Pilih kelas. Tanpa kotak/panel.
+   Desktop ≥ 960px: kiri = foto berbingkai lengkung yang menempel (sticky) dan berganti (crossfade) saat pernyataan di kanan
+   melewati tengah layar; kata Arab raksasa bergaris putih menumpang di tepi bawah foto (rata kiri, tidak masuk kolom
+   teks), terisi merah saat aktif.
+   HP: tiap pernyataan = foto lalu teks, bertumpuk, tanpa sticky. Reduced-motion: tanpa transisi (langsung berganti). */
+.why{--masuk:clamp(96px,13vw,190px);position:relative;
+  background:linear-gradient(in oklab,var(--pagi-bg) 0%,color-mix(in oklab,var(--pagi-bg) 93%,var(--kulit)) 15%,color-mix(in oklab,var(--pagi-bg) 72%,var(--kulit)) 32%,
+    color-mix(in oklab,var(--pagi-bg) 50%,var(--kulit)) 50%,color-mix(in oklab,var(--pagi-bg) 28%,var(--kulit)) 68%,color-mix(in oklab,var(--pagi-bg) 7%,var(--kulit)) 85%,var(--kulit) 100%)
+    0 0/100% var(--masuk) no-repeat,var(--kulit);color:var(--putih);--ink:var(--putih);--why-lembut:color-mix(in srgb,var(--putih) 88%,var(--kulit))}
+.why-wrap{padding-block:calc(var(--masuk) + clamp(32px,4vw,56px)) clamp(48px,5.6vw,80px)}
+.why-h{font-family:var(--f-display);font-weight:700;font-size:var(--step-4);line-height:1;letter-spacing:-.03em}
+.why-list{list-style:none;margin:clamp(20px,3vw,32px) 0 0;padding:0}
+.why-item{position:relative;padding-block:clamp(26px,4vw,40px);border-top:1px solid color-mix(in srgb,var(--putih) 24%,transparent)}
+/* aksen merah: garis pendek di atas pernyataan aktif, terbentang saat aktif */
+.why-item::before{content:"";position:absolute;left:0;top:-2px;width:64px;height:3px;background:var(--semangka);transform:scaleX(0);transform-origin:left;transition:transform .6s var(--ease)}
+.why-item.aktif::before{transform:none}
+.why-judul{font-family:var(--f-display);font-weight:700;font-size:clamp(2.25rem,1.7rem + 1.2vw,3rem);line-height:1.05;letter-spacing:-.02em}
+.why-item p{margin-top:14px;max-width:34ch;font-size:var(--step-1);line-height:1.5;color:var(--why-lembut)}
+/* kata Arab raksasa (dekor; hanya kata yang sudah ada): garis putih, terisi merah semangka saat aktif */
+.why-ar{font-family:var(--f-ar-display);font-weight:700;line-height:1;white-space:nowrap;direction:rtl;unicode-bidi:isolate;pointer-events:none;
+  color:transparent;-webkit-text-stroke:1.5px var(--putih);transition:color .6s var(--ease-menyala) .2s}
+.why-item.aktif .why-ar,.why-stage .why-ar.on{color:var(--semangka)}
+.why-media{position:relative;width:min(66vw,290px);margin-bottom:44px}
+.why-media .frame-arch{color:var(--putih)}
+.why-media .why-ar{position:absolute;right:-.12em;bottom:-.22em;font-size:clamp(3.6rem,17vw,5.4rem)}
+.why-stage{display:none}
+@media (min-width:960px){
+  .why-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(48px,6vw,104px);align-items:start}
+  .why-media{display:none}
+  .why-stage{--panggung:min(54vh,480px);display:block;position:sticky;top:calc(50vh - var(--panggung) / 2 + 24px);height:var(--panggung);
+    width:min(100%,calc(var(--panggung) * .8));margin-top:clamp(36px,6vw,56px)}
+  .why-stage .frame-arch{position:absolute;inset:0;aspect-ratio:auto;color:var(--putih);opacity:0;transition:opacity .7s var(--ease)}
+  .why-stage .frame-arch.on{opacity:1}
+  .why-stage .why-ar{position:absolute;left:-.04em;bottom:-.4em;font-size:clamp(5.4rem,9.6vw,8.8rem);opacity:0;transition:opacity .7s var(--ease),color .6s var(--ease-menyala) .25s}
+  .why-stage .why-ar.on{opacity:1}
+  /* dimampatkan (permintaan pemilik): ±29vh per pernyataan, terakhir ±37vh; judul pindah ke atas kolom kanan supaya
+     panggung mulai sejajar judul. Total section ≈ 1,6 layar di 1440×900 */
+  .why-item{min-height:min(29vh,280px);display:flex;flex-direction:column;justify-content:center}
+  .why-item:last-child{min-height:min(37vh,360px)}
+  .why-stage{margin-top:0}
+}
+@media (prefers-reduced-motion: reduce){.why-item::before,.why-ar,.why-stage .frame-arch,.why-stage .why-ar{transition:none!important}}
+
+/* ===== BIAYA: blok merah tua penuh lebar =====
+   Teks persis dari pemilik. "Rp100.000" HANYA di total struk (selain langkah 4 & FAQ bila perlu, lihat CLAUDE.md).
+   Kiri: judul, pernyataan besar, satu kalimat pendukung (putih di #B3202E 6,6:1; lembut putih 90% 5,6:1).
+   Kanan: printer + struk kertas putih, miring 1,5°, keluar dari celah printer mengikuti scroll (gerak "tergambar"):
+   --cetak 0..1 dianimasikan view timeline .receipt-wrap; cadangan JS di skrip. Nilai awal 1 = struk penuh
+   (reduced-motion / tanpa JS). Hanya transform, tanpa layout. Irisan semangka besar di belakang struk, biji di tepi.
+   Tepi atas = tepi biji semangka (.batas-biji); tepi bawah = pita keffiyeh merah-putih (satu-satunya rajut). */
+@property --cetak{syntax:'<number>';inherits:true;initial-value:1}
+.cost-blok{position:relative;overflow:clip;isolation:isolate;background:var(--semangka-tua);color:var(--putih);--ink-soft:color-mix(in srgb,var(--putih) 90%,var(--semangka-tua))}
+.cost-pita{background:var(--putih);position:relative;z-index:2}
+.cost-pita>i{display:block;--pita:40px}
+.cost{position:relative;z-index:1;display:grid;gap:clamp(40px,6vw,96px);align-items:center;padding-block:clamp(64px,8vw,120px)}
+@media (min-width:900px){.cost{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr)}}
+.cost-copy{display:grid;gap:clamp(16px,2vw,28px);align-content:center}
+/* label kecil (bukan judul besar): krem lembut #F5DEC1 di merah tua 5,1:1; jarak tegas ke pernyataan */
+.cost-label{font-family:var(--f-body);font-weight:500;font-size:clamp(1.1rem,1rem + .4vw,1.3rem);line-height:1.3;letter-spacing:.01em;color:#F5DEC1;margin-bottom:clamp(12px,2vw,28px)}
+/* frasa kunci: teks tetap putih (6,6:1), aksen kunyit sebagai garis bawah tebal (bukan warna teks: kunyit 4,1:1) */
+.cost-kunci{background:linear-gradient(var(--kunyit),var(--kunyit)) 0 92%/100% .1em no-repeat;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.cost-besar{font-family:var(--f-display);font-weight:700;font-size:clamp(3.2rem,1.4rem + 6.4vw,7.6rem);line-height:.95;letter-spacing:-.035em;text-wrap:balance}
+.cost-dukung{max-width:52ch;font-size:var(--step-1);line-height:1.5;color:var(--ink-soft)}
+/* biji semangka tersebar halus di tepi kiri & kanan */
+.cost-biji{position:absolute;z-index:0;top:0;bottom:0;width:clamp(56px,11vw,170px);--biji:var(--keffiyeh);--orn-alpha:.22}
+.cost-biji.kiri{left:0;right:auto}
+.cost-biji.kanan{right:0;left:auto;-webkit-mask-position:80px 40px;mask-position:80px 40px}
+.receipt-wrap{position:relative;display:grid;justify-items:center;rotate:-1.5deg}
+/* irisan semangka di belakang struk */
+.cost-slice{position:absolute;z-index:-1;right:-36%;top:44%;--slice:clamp(300px,40vw,580px);--putar:-18deg}
+/* printer: celah gelap tipis, tanpa bayangan tebal */
+.printer{width:min(100%,400px);height:18px;border-radius:9px;background:var(--keffiyeh);position:relative;z-index:2}
+.printer::after{content:"";position:absolute;left:22px;right:22px;top:8px;height:2px;border-radius:2px;background:#3A3A3A}
+.struk-jendela{width:min(calc(100% - 32px),380px);margin-top:-9px;overflow:hidden;position:relative;z-index:1}
+.receipt{background:var(--putih);color:var(--ink);padding:34px 26px 44px;font-variant-numeric:tabular-nums;position:relative;
+  transform:translateY(calc((var(--cetak) - 1) * 100%));will-change:transform;
+  /* tekstur kertas: garis horizontal sangat halus */
+  background-image:repeating-linear-gradient(0deg,color-mix(in srgb,var(--ink) 3.5%,transparent) 0 1px,transparent 1px 5px);
+  /* tepi bawah: sobekan zigzag keffiyeh */
+  -webkit-mask:linear-gradient(#000 0 0) top/100% calc(100% - 10px) no-repeat,var(--orn-sobek) left bottom/16px 10px repeat-x;
+  mask:linear-gradient(#000 0 0) top/100% calc(100% - 10px) no-repeat,var(--orn-sobek) left bottom/16px 10px repeat-x}
+.receipt{--ink:#10163A;--ink-soft:#4B4F63}
+.receipt-head{text-align:center;display:grid;gap:4px;padding-bottom:18px;border-bottom:1px dashed color-mix(in srgb,var(--ink) 35%,transparent)}
+.receipt-head b{font-family:var(--f-display);letter-spacing:.12em;font-size:1.1rem}
+.receipt-head>span{font-size:var(--step--1);color:var(--ink-soft)}
+.rline{display:grid;grid-template-columns:auto 1fr auto;gap:8px;align-items:baseline;padding:12px 0;font-size:.95rem}
+.rline::before{content:"";grid-column:2;grid-row:1;border-bottom:1px dotted color-mix(in srgb,var(--ink) 45%,transparent);transform:translateY(-4px)}
+.rline span:first-child{grid-column:1;grid-row:1}
+.rline span:last-child{grid-column:3;grid-row:1;font-weight:700;text-align:right}
+.rline-donasi span:first-child{max-width:20ch}
+/* total besar: label di atas, angka besar */
+.rtotal{display:grid;gap:2px;border-top:1px dashed color-mix(in srgb,var(--ink) 45%,transparent);margin-top:10px;padding-top:18px}
+.rtotal span:first-child{font-weight:700;font-size:.95rem}
+.rtotal span:last-child{font-family:var(--f-display);font-weight:700;font-size:clamp(2.4rem,1.8rem + 2vw,3.2rem);line-height:1;letter-spacing:-.02em;color:var(--semangka-tua)}
+.receipt-foot{margin-top:22px;padding-top:16px;text-align:center;font-size:var(--step--1);color:var(--ink-soft)}
+.receipt-foot .orn-band{height:10px;margin:0 auto 14px;color:color-mix(in srgb,var(--ink) 30%,transparent);-webkit-mask-size:20px 10px;mask-size:20px 10px}
+.receipt-foot [lang="ar"]{display:block;font-family:var(--f-ar);font-size:1.2rem;color:var(--zamrud-ink);margin-bottom:4px}
+@keyframes cetak{from{--cetak:0}to{--cetak:1}}
+@supports (animation-timeline: view()){.gerak .receipt-wrap{animation:cetak linear both;animation-timeline:view();animation-range:cover 12% cover 48%}}
+@media (max-width:899px){.cost-slice{right:-30%;top:52%;--slice:min(90vw,420px)}}
+
+/* ===== PILIH KELAS: layar terbelah Inggris | Arab =====
+   Prinsip: SEMUA informasi (judul, deskripsi, fokus belajar, jadwal) terlihat penuh tanpa interaksi; menggeser, mengetuk,
+   atau hover hanya memberi penekanan. ATURAN PERFORMA (keputusan pemilik): yang dianimasikan HANYA transform & opacity —
+   tidak ada grid-template-columns/width/left yang berubah, tidak ada @property. Kolom isi tetap 50/50 dan isi tiap sisi
+   berlebar tetap (--isi) menempel di tepi luar, jadi teks tidak pernah terpecah ulang.
+   Batas biru|hijau = d (px dari tengah). JS menulis transform LANGSUNG di 4 elemen (bukan variabel CSS yang diwariskan:
+   itu memicu hitung ulang gaya & paint seluruh isi tiap frame). Latar biru .latar-en: translateX(d - 50%), isinya (warna,
+   jaring, glyph Aa) digeser balik → efek "terpotong" dikerjakan compositor. Pita & pegangan: translateX(d).
+   Nilai CSS di bawah = posisi tengah (cadangan tanpa JS). Rentang geser dihitung JS dari lebar isi (35–65 di ≥ 1024px)
+   supaya sisi yang menyempit tidak bertabrakan; foto sisi yang menyempit memudar (opacity). < 1000px: dua blok bertumpuk. */
+.classes .h2{margin-bottom:clamp(28px,4vw,48px)}
+.split{--pad-luar:max(16px,calc((100vw - 1240px) / 2 + 32px));--isi:clamp(280px,25vw,340px);position:relative;isolation:isolate}
+.side{position:relative;overflow:hidden;min-width:0;contain:layout paint;color:var(--ink);--ink-soft:#3E4256}
+.side-en{--c:var(--lazuardi-ink);background:#C9D1F8}
+.side-ar{--c:var(--zamrud-ink);background:#D2E6C6;text-align:right}
+.side>.orn-net,.latar .orn-net{color:var(--c);--orn-alpha:.1}
+/* glyph raksasa (dekoratif, tanpa filter/blur) */
+.side-glyph{position:absolute;bottom:-.2em;font-family:var(--f-display);font-weight:700;font-size:clamp(11rem,28vw,28rem);line-height:1;color:var(--c);opacity:.16;
+  pointer-events:none;user-select:none;-webkit-user-select:none;transition:opacity .5s var(--ease)}
+.latar-en .side-glyph,.side-en .side-glyph{left:-.04em}
+.latar-ar .side-glyph,.side-ar .side-glyph{right:-.02em;bottom:-.1em;font-family:var(--f-ar-display)}
+.side-isi{position:relative;display:grid;gap:clamp(14px,1.6vw,20px);align-content:center;height:100%;padding:44px 16px}
+.side-teks{display:grid;gap:clamp(14px,1.6vw,20px);align-content:start}
+.side-judul{font-family:var(--f-display);font-weight:700;font-size:var(--step-3);line-height:1;letter-spacing:-.02em;color:var(--c)}
+.side-desc{font-size:var(--step-1);line-height:1.5;color:var(--ink-soft)}
+.side-info{display:grid;gap:22px;align-content:start;margin-top:6px}
+/* fokus belajar: teks berbutir daun zaitun (bukan pill/kotak), dua kolom */
+.cls-fokus{display:grid;grid-template-columns:repeat(2,max-content);gap:.5em 1.8em;font-weight:700;font-size:var(--step-0)}
+.cls-fokus>li::before{background:var(--c)}
+.side-ar .cls-fokus{justify-content:end}
+.side-ar .cls-fokus>li{padding-left:0;padding-right:1.6em}
+.side-ar .cls-fokus>li::before{left:auto;right:0;transform:scaleX(-1)}
+.sched{display:grid;gap:14px}
+.track{display:grid;gap:8px}
+.track-label{font-size:.9rem;color:var(--ink-soft);font-variant-numeric:tabular-nums}
+.track-label b{color:var(--ink);margin-right:.35em}
+/* strip 7 hari: hari kelas menyala seperti lentera; urutan Sen → Min juga di sisi Arab. Hari kelas punya nama aksesibel
+   ("Senin, kelas Inggris"); hari tanpa kelas aria-hidden */
+.days{display:grid;grid-template-columns:repeat(7,34px);gap:6px;list-style:none;margin:0;padding:0}
+.side-ar .days{justify-content:end}
+.day{aspect-ratio:1;display:grid;place-items:center;border:1px solid color-mix(in srgb,var(--ink) 22%,transparent);border-radius:4px;font-size:.7rem;font-weight:700;color:var(--ink-soft);background:color-mix(in srgb,var(--putih) 35%,transparent)}
+.day.on{border-color:color-mix(in srgb,var(--lentera) 60%,var(--kunyit-ink));background:var(--lentera);color:var(--kunyit-ink);
+  box-shadow:0 0 12px 1px color-mix(in srgb,var(--lentera) 55%,transparent)}
+.side-foto{width:min(56vw,230px);color:var(--c);transition:opacity .22s ease-out,transform .4s var(--ease)}
+.side-ar .side-foto{margin-left:auto}
+.latar,.split-garis,.split-pegangan{display:none}
+/* HP & tablet (< 1000px): dua blok bertumpuk, terbaca penuh, tanpa tarik. Ketuk = penekanan: garis tepi 6px (pseudo, scaleY) + glyph */
+@media (max-width:999px){
+  .side-isi{padding:44px max(16px,env(safe-area-inset-left,0px))}
+  .side-glyph{font-size:11rem}
+  .side-en .side-glyph{left:auto;right:-.02em}
+  .side-ar .side-glyph{right:auto;left:-.02em}
+  .side::after{content:"";position:absolute;top:0;bottom:0;width:6px;background:var(--c);transform:scaleY(0);transform-origin:top;transition:transform .4s var(--ease)}
+  .side-en::after{left:0}.side-ar::after{right:0}
+  .split[data-state="en"] .side-en::after,.split[data-state="ar"] .side-ar::after{transform:none}
+  .split[data-state="en"] .side-en .side-glyph,.split[data-state="ar"] .side-ar .side-glyph{opacity:.26}
+}
+@media (min-width:1000px){
+  .split{--pad-luar:max(32px,calc((100vw - 1240px) / 2 + 32px));display:grid;grid-template-columns:1fr 1fr;min-height:clamp(600px,82vh,760px)}
+  /* latar: hijau penuh di bawah, biru di atas digeser ke batas */
+  .side-en,.side-ar{background:none}
+  .side>.orn-net,.side>.side-glyph{display:none}
+  .latar{display:block;position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:-1}
+  .latar-ar{background:#D2E6C6;--c:var(--zamrud-ink)}
+  .latar-en{--c:var(--lazuardi-ink);transform:translateX(-50%)}
+  .latar-en-isi{position:absolute;inset:0;background:#C9D1F8;transform:translateX(50%)}
+  .latar-en,.latar-en-isi,.split-garis,.split-pegangan{transition:transform .65s cubic-bezier(.45,0,.25,1)}
+  .split.is-tarik .latar-en,.split.is-tarik .latar-en-isi,.split.is-tarik .split-garis,.split.is-tarik .split-pegangan{transition:none;will-change:transform}
+  .split[data-state="en"] .latar-en .side-glyph,.split[data-state="ar"] .latar-ar .side-glyph{opacity:.26}
+  .side{cursor:pointer}
+  /* isi: kolom teks berlebar tetap (--isi) di tepi luar + foto di sisi dalam (lebar sisa, maks 230px) */
+  .side-isi{grid-template-columns:var(--isi) auto;column-gap:28px;align-items:end;justify-content:start;padding:clamp(40px,5vw,64px) 0 clamp(40px,5vw,64px) var(--pad-luar)}
+  .side-ar .side-isi{grid-template-columns:auto var(--isi);justify-content:end;padding-left:0;padding-right:var(--pad-luar)}
+  .side-ar .side-foto{order:-1;margin-left:0}
+  .side-teks{align-self:center}
+  .side-foto{width:clamp(0px,calc(50vw - var(--pad-luar) - var(--isi) - 66px),230px)}
+  /* sisi yang menyempit: fotonya memudar (seni, bukan informasi) supaya tidak tertabrak batas */
+  .split[data-state="ar"] .side-en .side-foto,.split[data-state="en"] .side-ar .side-foto{opacity:0;transform:scale(.96)}
+  /* sisi yang ditekankan: foto membesar halus ke arah pita (transform saja), mengisi ruang yang terbuka */
+  .side-en .side-foto{transform-origin:0 100%}.side-ar .side-foto{transform-origin:100% 100%}
+  .split[data-state="en"] .side-en .side-foto,.split[data-state="ar"] .side-ar .side-foto{transform:scale(1.12)}
+  /* pembagi: pita keffiyeh tegak (hitam di atas putih) 28px + pegangan irisan semangka 72px; bergerak dengan transform */
+  .split-garis{display:block;position:absolute;z-index:2;top:0;bottom:0;left:50%;width:28px;margin-left:-14px;background:var(--putih);pointer-events:none}
+  .split-garis::before{content:"";position:absolute;inset:0 2px;background:var(--keffiyeh);
+    -webkit-mask:url(assets/ornaments/pita-sempit-tegak.svg) 50% 0/24px 24px repeat-y;mask:url(assets/ornaments/pita-sempit-tegak.svg) 50% 0/24px 24px repeat-y}
+  .split-pegangan{display:block;position:absolute;z-index:3;top:50%;left:50%;width:72px;height:72px;margin:-36px 0 0 -36px;border-radius:50%;
+    cursor:ew-resize;touch-action:pan-y;box-shadow:0 0 0 3px var(--putih),0 0 0 4px var(--keffiyeh)}
+  .split-pegangan svg{display:block;width:100%;height:100%;pointer-events:none}
+  .split-pegangan:focus-visible{outline:3px solid var(--kunyit);outline-offset:6px;border-radius:50%}
+  /* denyut: hanya scale pada SVG di dalam pegangan (transform pegangan sendiri dipakai untuk posisi) */
+  .gerak .split.is-lihat:not(.sudah) .split-pegangan svg{animation:denyut 1.8s var(--ease) infinite}
+}
+@keyframes denyut{0%,100%{transform:scale(1)}50%{transform:scale(1.1)}}
+@media (prefers-reduced-motion: reduce){.latar-en,.latar-en-isi,.split-garis,.split-pegangan,.side-glyph,.side-foto,.side::after{transition:none!important}.split-pegangan svg{animation:none!important}}
+
+/* ===== CARA BERGABUNG =====
+   Kepala: judul (+ syarat satu kalimat) dan pilihan bahasa "Aku mau belajar: Inggris | Arab" (radio asli = radiogroup,
+   panah kiri/kanan berfungsi). Pilihan menulis section[data-bahasa="en|ar"]; komponen di bawahnya membaca atribut itu.
+   Tanpa JS pilihan disembunyikan (tidak berfungsi) dan tampil Inggris + tautan teks ke kedua tes. */
+.gabung-kepala{display:flex;flex-wrap:wrap;gap:20px 40px;align-items:end;justify-content:space-between}
+.gabung-judul{display:grid;gap:12px;max-width:52ch}
+.gabung-syarat{font-size:var(--step-1);line-height:1.5;color:var(--ink-soft)}
+.pilih-bahasa{display:none;align-items:center;gap:6px;margin:0;padding:5px 5px 5px 16px;border:1px solid var(--ink);border-radius:999px;min-width:0}
+.js .pilih-bahasa{display:flex}
+.pilih-bahasa legend{float:left;margin-right:6px;padding:0;font-weight:600;font-size:.95rem}
+.pilih-bahasa label{position:relative;cursor:pointer}
+.pilih-bahasa input{position:absolute;inset:0;opacity:0;margin:0;cursor:pointer}
+.pilih-bahasa span{display:block;padding:.55em 1.15em;border-radius:999px;font-weight:700;transition:background-color .25s,color .25s}
+.pilih-bahasa input:checked+span{background:var(--ink);color:var(--paper)}
+.pilih-bahasa input[value="en"]:checked+span{background:var(--lazuardi);color:#fff}
+.pilih-bahasa input[value="ar"]:checked+span{background:var(--zamrud);color:#fff}
+.pilih-bahasa input:focus-visible+span{outline:3px solid var(--kunyit);outline-offset:2px}
+@media (prefers-reduced-motion: reduce){.pilih-bahasa span{transition:none}}
+
+/* (C) Enam langkah. Desktop ≥ 900px: satu jalur horizontal selebar kontainer — tali berombak (SVG) dengan enam lentera
+   tergantung di lembahnya; di bawah tiap lentera: nomor, judul, satu keterangan. Lentera menyala berurutan sekali
+   (.jalur-nyala dari IntersectionObserver, jeda 120 ms), lentera ke-6 lebih besar. Arab: tiap kolom digeser
+   translateX((5 − 2i) × 100%) → jalur dicerminkan kanan→kiri dengan transisi halus; DOM tetap 1→6 (urutan baca).
+   HP: daftar rapat, benang tegak menghubungkan nomor. Hanya transform & opacity. */
+.jalur-wrap{margin-top:clamp(40px,6vw,72px);display:grid;gap:clamp(16px,2vw,24px)}
+.jalur-judul{font-family:var(--f-display);font-weight:700;font-size:var(--step-2);line-height:1.1}
+.jalur{position:relative}
+.jalur-langkah{list-style:none;margin:0;padding:0}
+.langkah h4{margin:0;font-family:var(--f-display);font-weight:700;font-size:1.1rem;line-height:1.2}
+.langkah h4 a{text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:.2em}
+.langkah p{font-size:.9rem;line-height:1.45;color:var(--ink-soft);margin-top:4px}
+.langkah-no{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;font-weight:800;font-size:.85rem;font-variant-numeric:tabular-nums;
+  border:1.5px solid color-mix(in srgb,var(--ink) 55%,transparent);background:var(--paper);position:relative;isolation:isolate}
+.langkah-no::after{content:"";position:absolute;inset:-1.5px;border-radius:50%;background:var(--lentera);opacity:0;z-index:-1}
+.jalur-nyala .langkah-no{border-color:color-mix(in srgb,var(--lentera) 60%,var(--kunyit-ink))}
+.jalur-nyala .langkah-no::after{opacity:1}
+.langkah-lentera{display:none}
+.tali-dasar,.tali-rajut{fill:none;vector-effect:non-scaling-stroke}
+.tali-dasar{stroke:color-mix(in srgb,var(--ink) 40%,transparent);stroke-width:1.2}
+.tali-rajut{stroke:var(--semangka-tua);stroke-width:2.4;stroke-dasharray:2 7;stroke-linecap:round;opacity:.8}
+.jalur-tali{display:none}
+/* HP: daftar vertikal rapat; benang tegak di belakang nomor */
+@media (max-width:899px){
+  .jalur-langkah{position:relative;display:grid;gap:14px}
+  .jalur-langkah::before{content:"";position:absolute;left:14px;top:12px;bottom:12px;width:2px;background:color-mix(in srgb,var(--ink) 25%,transparent)}
+  .langkah{display:grid;grid-template-columns:30px 1fr;column-gap:14px;align-items:start}
+  .langkah-no{grid-row:1/3}
+  .langkah h4{grid-column:2;margin-top:4px}
+  .langkah p{grid-column:2}
+}
+/* desktop: jalur horizontal */
+@media (min-width:900px){
+  .jalur-tali{display:block;position:absolute;left:0;right:0;top:0;width:100%;height:48px;transition:transform .7s cubic-bezier(.45,0,.25,1)}
+  .jalur-langkah{position:relative;display:grid;grid-template-columns:repeat(6,minmax(0,1fr))}
+  .langkah{--u:var(--i);display:grid;justify-items:center;align-content:start;text-align:center;padding:0 clamp(8px,1.2vw,18px);transition:transform .7s cubic-bezier(.45,0,.25,1)}
+  .gabung[data-bahasa="ar"] .langkah{--u:calc(5 - var(--i));transform:translateX(calc((5 - 2 * var(--i)) * 100%))}
+  .gabung[data-bahasa="ar"] .jalur-tali{transform:scaleX(-1)}
+  /* lentera tergantung di lembah tali (y = 38/48 dari tinggi tali) */
+  .langkah-lentera{display:block;position:relative;width:22px;height:30px;margin-top:38px;border-radius:7px 7px 9px 9px;
+    background:color-mix(in srgb,var(--ink) 12%,var(--paper));border:1.5px solid color-mix(in srgb,var(--ink) 50%,transparent)}
+  .langkah-lentera::before{content:"";position:absolute;left:50%;top:-9px;width:10px;height:8px;margin-left:-5px;border-radius:3px 3px 0 0;background:color-mix(in srgb,var(--ink) 55%,transparent)}
+  .langkah-lentera::after{content:"";position:absolute;inset:-26px;border-radius:50%;opacity:0;
+    background:radial-gradient(closest-side,color-mix(in srgb,var(--kunyit) 80%,transparent) 0 22%,color-mix(in srgb,var(--lentera) 35%,transparent) 50%,transparent)}
+  /* lentera ke-6 (kelas pertama) lebih besar (scale dari atas; nomor & teks tetap sebaris) */
+  .langkah:nth-child(6) .langkah-lentera{transform:scale(1.3);transform-origin:50% 0}
+  .jalur-nyala .langkah-lentera{border-color:color-mix(in srgb,var(--lentera) 60%,var(--kunyit-ink))}
+  .jalur-nyala .langkah-lentera::after{opacity:1}
+  .langkah-no{margin-top:14px;margin-bottom:10px}
+  .langkah p{max-width:24ch}
+}
+.gerak .langkah-no::after,.gerak .langkah-lentera::after{transition:opacity .6s var(--ease-menyala) calc(var(--u,var(--i)) * 120ms)}
+@media (prefers-reduced-motion: reduce){.langkah,.jalur-tali{transition:none!important}}
+
+/* (B) Kartu Placement Test = "lembar ujian" LCDU: kertas putih bergaris halus, margin merah, strip keffiyeh houndstooth
+   hijau di atas. Komposisi = 70 titik lentera (20 biru · 20 hijau · 30 merah) yang muncul berurutan sekali; cincin waktu
+   tergambar sekali (stroke-dashoffset); "Tes suara" = nada pendek Web Audio + gelombang (statis saat reduced-motion).
+   Satu-satunya tombol kunyit di section: "Mulai Placement Test" (buka) / "Tanya admin lewat WhatsApp" (tutup). */
+.pt-kartu{position:relative;display:grid;gap:clamp(28px,4vw,56px);margin-top:clamp(32px,4vw,48px);padding:clamp(36px,4vw,52px) clamp(22px,4vw,56px) clamp(28px,3.4vw,44px) clamp(36px,5vw,72px);
+  background:#fff;color:#10163A;border:1px solid color-mix(in srgb,#10163A 14%,transparent);border-radius:4px;
+  background-image:linear-gradient(90deg,transparent clamp(20px,3vw,44px),color-mix(in srgb,var(--semangka) 55%,transparent) 0 calc(clamp(20px,3vw,44px) + 1.5px),transparent 0),
+    repeating-linear-gradient(0deg,color-mix(in srgb,var(--lazuardi) 7%,transparent) 0 1px,transparent 1px 32px)}
+.pt-kartu::before{content:"";position:absolute;left:0;right:0;top:0;height:10px;background:var(--kulit);border-radius:4px 4px 0 0;
+  -webkit-mask:url(assets/ornaments/kain-kotak.svg) 0 0/10px 10px repeat;mask:url(assets/ornaments/kain-kotak.svg) 0 0/10px 10px repeat}
+@media (min-width:900px){.pt-kartu{grid-template-columns:minmax(0,1fr) auto;align-items:start}}
+.pt-isi{display:grid;gap:clamp(16px,2vw,22px);align-content:start}
+.pt-judul{font-family:var(--f-display);font-weight:700;font-size:var(--step-3);line-height:1;letter-spacing:-.02em}
+.pt-tujuan{font-size:var(--step-1);color:#3E4256}
+/* komposisi: tiga kelompok titik; hover/fokus menampilkan nama & jumlah (selalu tampil di perangkat tanpa hover) */
+.pt-komposisi{list-style:none;margin:6px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:14px 26px}
+.pt-kel{--c:var(--lazuardi);display:grid;gap:8px;align-content:start;border-radius:6px;outline-offset:6px;transition:opacity .25s}
+.kel-2{--c:var(--kulit)}.kel-3{--c:var(--semangka-tua)}
+.pt-titik{display:grid;grid-template-columns:repeat(10,10px);gap:5px}
+.pt-titik i{width:10px;height:10px;border-radius:50%;background:var(--c);box-shadow:0 0 0 2px color-mix(in srgb,var(--c) 18%,transparent)}
+.pt-label{font-size:.9rem;color:#3E4256;opacity:0;transform:translateY(-3px);transition:opacity .25s,transform .25s}
+.pt-label b{color:var(--c);margin-right:.3em}
+.pt-komposisi:hover .pt-kel:not(:hover),.pt-komposisi:focus-within .pt-kel:not(:focus-within){opacity:.35}
+.pt-kel:hover .pt-label,.pt-kel:focus-within .pt-label{opacity:1;transform:none}
+@media (hover:none){.pt-label{opacity:1;transform:none}}
+.pt-catatan{max-width:66ch;font-size:.95rem;line-height:1.6;color:#3E4256}
+.pt-aksi{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px;margin-top:4px}
+.pt-status{flex-basis:100%;font-weight:600;color:var(--semangka-tua)}
+.pt-kartu[data-open="true"] .pt-status,.pt-kartu[data-open="true"] .pt-tanya,.pt-kartu[data-open="false"] .pt-mulai{display:none}
+.pt-nojs{flex-basis:100%;font-size:.9rem;color:#3E4256}
+.js .pt-nojs{display:none}
+/* samping: cincin waktu + tes suara */
+.pt-samping{display:flex;flex-wrap:wrap;gap:24px;align-items:center}
+@media (min-width:900px){.pt-samping{flex-direction:column;align-items:center;text-align:center;width:200px}}
+.pt-waktu{position:relative;margin:0;width:150px;height:150px;flex:none}
+.pt-waktu svg{width:100%;height:100%;transform:rotate(-90deg)}
+.pt-waktu circle{fill:none;stroke-width:7}
+.cincin-dasar{stroke:color-mix(in srgb,var(--lentera) 30%,transparent)}
+.cincin-isi{stroke:var(--kunyit);stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:0}
+.pt-waktu figcaption{position:absolute;inset:0;display:grid;place-content:center;text-align:center;line-height:1}
+.pt-waktu b{font-family:var(--f-display);font-size:2.8rem}
+.pt-waktu span{font-size:.8rem;color:#3E4256;margin-top:4px}
+.pt-suara-blok{display:grid;gap:8px;max-width:30ch}
+.pt-suara{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:44px;padding:.55em 1.1em;border:1.5px solid #10163A;border-radius:999px;background:#fff;color:#10163A;font-weight:700;cursor:pointer}
+.pt-suara:hover{background:color-mix(in srgb,#10163A 6%,#fff)}
+.pt-gelombang{display:inline-flex;align-items:center;gap:3px;height:18px}
+.pt-gelombang i{width:3px;height:100%;border-radius:2px;background:var(--lazuardi);transform:scaleY(.35)}
+.pt-gelombang i:nth-child(2),.pt-gelombang i:nth-child(4){transform:scaleY(.65)}.pt-gelombang i:nth-child(3){transform:scaleY(1)}
+.pt-suara-ket{font-size:.85rem;color:#3E4256}
+@keyframes gelombang{0%,100%{transform:scaleY(.3)}50%{transform:scaleY(1)}}
+.gerak .pt-kartu.bunyi .pt-gelombang i{animation:gelombang .32s ease-in-out 2}
+.gerak .pt-kartu.bunyi .pt-gelombang i:nth-child(2n){animation-delay:.08s}.gerak .pt-kartu.bunyi .pt-gelombang i:nth-child(3){animation-delay:.16s}
+/* masuk layar sekali (.pt-tampil dari IntersectionObserver): titik berurutan, cincin tergambar */
+.gerak .pt-titik i{transition:opacity .35s var(--ease-muncul) calc(var(--n) * 11ms),transform .35s var(--ease-muncul) calc(var(--n) * 11ms)}
+.gerak .pt-kartu:not(.pt-tampil) .pt-titik i{opacity:0;transform:scale(.3)}
+.gerak .cincin-isi{transition:stroke-dashoffset 1.4s var(--ease-menyala) .2s}
+.gerak .pt-kartu:not(.pt-tampil) .cincin-isi{stroke-dashoffset:1}
+/* HP: titik lebih kecil (dua kelompok sebaris), cincin lebih kecil di samping tes suara, catatan sedikit lebih kecil */
+@media (max-width:699px){
+  .pt-komposisi{gap:12px 20px}
+  .pt-titik{grid-template-columns:repeat(10,7px);gap:4px}
+  .pt-titik i{width:7px;height:7px}
+  .pt-label{font-size:.82rem}
+  .pt-catatan{font-size:.9rem;line-height:1.55}
+  .pt-samping{flex-wrap:nowrap;gap:16px}
+  .pt-waktu{width:104px;height:104px}
+  .pt-waktu b{font-size:2rem}
+  .pt-waktu span{font-size:.7rem}
+}
+@media (prefers-reduced-motion: reduce){.pt-kel,.pt-label{transition:none}}
+
+/* ===== CERITA ===== */
+.stories{overflow:hidden}
+.stories-grid{display:grid;gap:clamp(40px,6vw,80px);align-items:center}
+@media (min-width:900px){.stories-grid{grid-template-columns:.9fr 1.1fr}}
+.stack{position:relative;height:420px;max-width:520px;width:100%;justify-self:center}
+.card{position:absolute;inset:0;border-radius:var(--r-lg);background:var(--surface);color:var(--ink);padding:clamp(24px,4vw,40px);display:grid;grid-template-rows:auto 1fr auto;gap:20px;box-shadow:0 30px 60px -30px rgba(0,0,0,.5);touch-action:pan-y;user-select:none;-webkit-user-select:none;transition:transform .5s var(--ease)}
+.card.dragging{transition:none;cursor:grabbing}
+.card:first-child{cursor:grab}
+.card-quote{font-size:clamp(1.15rem,1rem + .8vw,1.55rem);font-weight:600;line-height:1.4}
+.card-mark{font-family:var(--f-display);font-size:3.5rem;line-height:.6;color:var(--lazuardi-ink)}
+.card-who{display:flex;gap:14px;align-items:center}
+.avatar{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;font-weight:800;background:var(--zamrud);color:var(--on-color);flex:none}
+.card-who b{display:block}
+.card-who span{font-size:var(--step--1);color:var(--ink-soft)}
+.card.you{background:var(--kunyit);color:var(--kunyit-ink)}
+.card.you .card-mark{color:var(--kunyit-ink)}
+.card.you .card-who span{color:var(--kunyit-ink)}
+.stack-ctrl{display:flex;gap:12px;align-items:center;margin-top:8px}
+
+/* ===== TIM ===== */
+.team-head{display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;align-items:end;margin-bottom:clamp(28px,4vw,48px)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:0;padding:10px 16px;border-radius:999px;background:var(--surface);box-shadow:0 0 0 1.5px var(--line) inset;font-weight:600;cursor:pointer;font-size:.92rem;transition:background-color .2s,color .2s}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--paper);box-shadow:none}
+.chip small{opacity:.6;margin-left:4px;font-variant-numeric:tabular-nums}
+.team{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:clamp(14px,2vw,24px);list-style:none;margin:0;padding:0}
+.member{display:grid;gap:12px;transition:opacity .35s,transform .35s var(--ease)}
+.member.out{opacity:.12;transform:scale(.96);pointer-events:none}
+.portrait{aspect-ratio:4/5;max-width:100%;border-radius:var(--r-md);position:relative;overflow:hidden;background:var(--c,var(--lazuardi));display:grid;place-items:center;transform-style:preserve-3d;transition:transform .4s var(--ease)}
+.member[data-g~="ar"] .portrait{--c:var(--zamrud)}
+.member[data-g="mgmt"] .portrait{--c:var(--ink)}
+.portrait::before{content:"";position:absolute;inset:0;opacity:.14;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 72 72'%3E%3Cg fill='none' stroke='white' stroke-width='1.6'%3E%3Crect x='18' y='18' width='36' height='36'/%3E%3Crect x='18' y='18' width='36' height='36' transform='rotate(45 36 36)'/%3E%3C/g%3E%3C/svg%3E");background-size:48px}
+.portrait .ini{position:relative;font-family:var(--f-display);font-weight:700;font-size:clamp(2.4rem,5vw,3.4rem);color:var(--on-color);letter-spacing:-.02em}
+.portrait .certs{position:absolute;left:10px;right:10px;bottom:10px;display:flex;flex-wrap:wrap;gap:6px;transform:translateY(10px);opacity:0;transition:opacity .3s,transform .3s var(--ease)}
+.portrait .certs span{background:var(--surface);color:var(--ink);font-size:.72rem;font-weight:700;padding:4px 8px;border-radius:999px}
+.member:hover .certs,.member:focus-within .certs{opacity:1;transform:none}
+@media (hover:none){.portrait .certs{opacity:1;transform:none}}
+.member b{display:block;font-size:1rem;line-height:1.3}
+.member span.role{font-size:var(--step--1);color:var(--ink-soft)}
+.team-note{margin-top:24px;font-size:var(--step--1);color:var(--ink-soft)}
+
+/* ===== DONASI ===== */
+.donate{position:relative;overflow:hidden}
+/* jaring keffiyeh sangat tipis; memudar masuk setelah sambungan senja → malam (tanpa tepi tajam) */
+.donate::before{content:"";position:absolute;inset:0;pointer-events:none;background:currentColor;opacity:.05;
+  -webkit-mask:var(--orn-net) 0 0/24px 24px repeat,linear-gradient(transparent var(--sambung),#000 calc(var(--sambung) + 240px));-webkit-mask-composite:source-in;
+  mask:var(--orn-net) 0 0/24px 24px repeat,linear-gradient(transparent var(--sambung),#000 calc(var(--sambung) + 240px));mask-composite:intersect}
+.donate .wrap{position:relative}
+.donate-grid{display:grid;gap:clamp(32px,5vw,64px);align-items:center}
+@media (min-width:900px){.donate-grid{grid-template-columns:1fr 1fr}}
+.donate-ar{font-family:var(--f-ar);font-size:var(--step-2);line-height:1.6;color:inherit;direction:rtl;text-align:right;opacity:.9}
+.donate-ref{font-size:var(--step--1);color:var(--ink-soft)}
+.acct{background:var(--surface);color:var(--ink);border-radius:var(--r-lg);padding:clamp(24px,4vw,36px);display:grid;gap:18px}
+.acct small{font-size:var(--step--1);color:var(--ink-soft);font-weight:600}
+.acct-num{font-family:var(--f-display);font-weight:700;font-size:clamp(1.6rem,1.2rem + 2vw,2.4rem);letter-spacing:.02em;font-variant-numeric:tabular-nums;user-select:all;-webkit-user-select:all;overflow-wrap:anywhere}
+.acct-row{display:flex;flex-wrap:wrap;gap:12px}
+.acct .btn-ghost{color:var(--ink)}
+.copied{font-weight:700;color:var(--good);font-size:var(--step--1);align-self:center}
+
+/* ===== MITRA ===== */
+.partners{padding-bottom:40px;border-bottom:1px solid var(--line)}
+.foot-band{color:var(--lazuardi-ink);opacity:.7}
+.partners-row{display:flex;flex-wrap:wrap;gap:16px 40px;align-items:center;justify-content:space-between}
+.partners-row p{font-weight:700}
+.logos{display:flex;flex-wrap:wrap;gap:12px}
+.logo-slot{width:120px;height:52px;border-radius:12px;box-shadow:0 0 0 1.5px var(--line) inset;display:grid;place-items:center;font-size:.72rem;color:var(--ink-soft)}
+
+/* ===== FOOTER ===== */
+.foot{padding-block:clamp(56px,8vw,96px) 40px;display:grid;gap:48px}
+.foot-grid{display:grid;gap:32px}
+@media (min-width:900px){.foot-grid{grid-template-columns:1.2fr 1fr 1fr}}
+.wotd{background:var(--surface);border-radius:var(--r-lg);padding:24px;display:grid;gap:14px;box-shadow:0 0 0 1px var(--line) inset}
+.wotd h3{font-size:var(--step--1);color:var(--ink-soft);font-weight:700}
+.wotd-pair{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.wotd-pair div{display:grid;gap:2px}
+.wotd-en{font-family:var(--f-display);font-weight:700;font-size:1.3rem;color:var(--lazuardi-ink)}
+.wotd-ar{font-family:var(--f-ar-display);font-size:1.8rem;line-height:1.2;color:var(--zamrud-ink);direction:rtl;text-align:left}
+.wotd-pair span{font-size:var(--step--1);color:var(--ink-soft)}
+.foot-links{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.foot-links a{text-decoration:none;font-weight:600}
+.foot-links a:hover{text-decoration:underline}
+.foot h4{margin:0 0 14px;font-size:var(--step--1);color:var(--ink-soft)}
+.wordmark{margin-top:clamp(40px,6vw,72px)}
+.wordmark img{display:block;width:clamp(220px,42vw,560px);height:auto}
+.legal{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-between;font-size:var(--step--1);color:var(--ink-soft)}
+
+/* ===== Mengambang ===== */
+.fab{position:fixed;right:max(16px,calc(env(safe-area-inset-right,0px) + 16px));bottom:calc(env(safe-area-inset-bottom,0px) + 16px);z-index:40;display:flex;align-items:center;gap:10px;padding:12px 18px 12px 14px;border-radius:999px;background:var(--zamrud);color:var(--on-color);font-weight:700;text-decoration:none;box-shadow:0 14px 30px -10px rgba(6,92,65,.6);transition:transform .25s var(--ease),opacity .5s ease,visibility .5s}
+.fab:hover{transform:translateY(-3px)}
+/* selama hero tombol disembunyikan; muncul halus setelah hero */
+.fab.is-away{opacity:0;visibility:hidden;transform:translateY(16px);pointer-events:none}
+.fab svg{width:22px;height:22px;fill:currentColor}
+
+
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important}
+}
+</style>
+<script type="importmap">{"imports":{"three":"./vendor/three/three.module.min.js"}}</script>
+</head>
+<body>
+<a class="skip" href="#pengantar">Lewati ke konten</a>
+
+<!-- ============ NAV ============ -->
+<header class="nav" data-fase="pagi">
+  <div class="wrap">
+    <nav class="nav-bar" aria-label="Navigasi utama">
+      <a class="brand" href="#top"><img class="logo-light" src="assets/brand/web/lcdu-lockup-color.png" width="90" height="30" alt="LCDU"><img class="logo-dark" src="assets/brand/web/lcdu-lockup-white.png" width="90" height="30" alt="LCDU"></a>
+      <ul class="nav-links">
+        <li><a href="#kelas">Kelas</a></li>
+        <li><a href="#biaya">Biaya</a></li>
+        <li><a href="#bergabung">Cara bergabung</a></li>
+        <li><a href="#tim">Tim</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#donasi">Donasi</a></li>
+      </ul>
+      <a class="btn btn-sun" href="#bergabung">Daftar</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<!-- ============ HERO: gelap menjadi terang ============ -->
+<section class="hero" id="hero" aria-label="Pembuka">
+  <div class="hero-stage">
+    <div class="hero-canvas" id="hero-canvas" role="img" aria-label="Kompleks Masjid Al-Aqsa yang perlahan berubah dari gelap malam menjadi terang fajar"></div>
+    <div class="hero-scrim" aria-hidden="true"></div>
+    <p class="hero-id"><img src="assets/brand/web/lcdu-lockup-white.png" width="120" height="40" alt="LCDU"><span class="sr-only" lang="en">Language Course for Da'wah &amp; Ummah</span></p>
+    <div class="hero-copy">
+      <h1 class="beat beat-0">Kelas Bahasa Arab &amp; Inggris untuk dakwah dan umat.</h1>
+      <p class="beat beat-1" aria-hidden="true">Setiap ilmu yang kita pelajari menyalakan satu cahaya.</p>
+      <p class="beat beat-2" aria-hidden="true">Bersama, kita nyalakan harapan untuk Palestina.</p>
+    </div>
+    <div class="hero-meter" aria-hidden="true"></div>
+    <div class="scroll-cue" id="scroll-cue" aria-hidden="true"><span>Scroll</span><i></i></div>
+  </div>
+</section>
+<div class="hero-switch" id="hero-switch" role="group" aria-label="Bandingkan varian hero">
+  <span>Hero</span>
+  <button type="button" data-v="lentera-hd">Foto</button>
+  <button type="button" data-v="diorama">3D</button>
+</div>
+
+<!-- motif keffiyeh × semangka: pembatas di awal section setelah hero (tidak tampil di dalam hero) -->
+<div class="kufiyah" aria-hidden="true"></div>
+
+<!-- ============ SATU HARI BELAJAR: semua section setelah hero ============
+     Tiap .fase = satu waktu (pagi, siang, sore, senja, malam) dengan latar + tinta sendiri (token di :root).
+     Sambungan antar-fase = gradasi panjang di padding atas fase berikutnya (tidak ada teks di atasnya). -->
+<div class="hari" id="hari">
+
+<div class="fase" data-fase="pagi">
+<!-- ============ PENGANTAR: tiga fragmen yang menyala kata demi kata saat dibaca ============
+     Pembaca layar membaca kalimat utuh (.sr-only); versi per kata hanya visual (aria-hidden). --i = urutan kata, --n = jumlah kata.
+     Foto stok SEMENTARA (assets/photos/CREDITS.md). -->
+<section data-lentera class="band intro" id="pengantar" aria-labelledby="intro-h">
+  <div class="wrap intro-grid">
+    <div class="intro-teks">
+      <h2 class="intro-kalimat" id="intro-h" style="--n:7" data-judul=".k">
+        <span class="sr-only">Belajar Bahasa Arab dan Inggris. Online. Nirlaba.</span>
+        <span aria-hidden="true"><span class="intro-l1"><span class="k" style="--i:0">Belajar</span> <span class="k" style="--i:1">Bahasa</span> <span class="k k-ar" style="--i:2">Arab</span> <span class="k" style="--i:3">dan</span> <span class="k k-en" style="--i:4">Inggris.</span></span><span class="intro-l2"><span class="k" style="--i:5">Online.</span></span><span class="intro-l3"><span class="k k-merah" style="--i:6">Nirlaba.</span></span></span>
+      </h2>
+      <p class="intro-yayasan"><i class="orn-leaf" aria-hidden="true"></i><span>Dikelola <a class="tautan-yayasan" href="https://alfacentauri.sch.id/yayasan/" data-cfg-href="yayasan.url" target="_blank" rel="noopener">Yayasan Taqwa Cerdas Kreatif<span class="sr-only"> (buka di tab baru)</span></a>.</span><i class="orn-band" aria-hidden="true"></i></p>
+    </div>
+    <div class="intro-seni" aria-hidden="true">
+      <figure class="frame-arch"><picture><source type="image/avif" srcset="assets/photos/aqsa-480.avif 480w, assets/photos/aqsa-960.avif 960w" sizes="(min-width:900px) 400px, 72vw"><img src="assets/photos/aqsa-960.webp" srcset="assets/photos/aqsa-480.webp 480w, assets/photos/aqsa-960.webp 960w" sizes="(min-width:900px) 400px, 72vw" alt="" loading="lazy" decoding="async" style="object-position:100% 50%"></picture></figure>
+    </div>
+  </div>
+  <i class="orn-slice intro-slice" aria-hidden="true"></i>
+</section>
+
+<!-- ============ KENAPA LCDU: blok hijau, foto menempel di kiri (desktop) berganti mengikuti pernyataan ============
+     .why-stage (desktop) dan .why-media (HP) adalah foto dekoratif yang sama (aria-hidden); yang tidak tampil tidak diunduh
+     (loading="lazy" + display:none). Kata Arab hanya yang sudah ada. Foto stok SEMENTARA. -->
+<section data-lentera class="why" id="kenapa" aria-labelledby="why-h">
+  <div class="wrap why-wrap">
+    <div class="why-grid">
+      <div class="why-stage" aria-hidden="true">
+          <figure class="frame-arch on" data-i="0"><picture><source type="image/avif" srcset="assets/photos/menulis-480.avif 480w, assets/photos/menulis-960.avif 960w" sizes="(min-width:960px) 34vw, 1px"><img src="assets/photos/menulis-960.webp" srcset="assets/photos/menulis-480.webp 480w, assets/photos/menulis-960.webp 960w" sizes="(min-width:960px) 34vw, 1px" alt="" loading="lazy" decoding="async"></picture></figure>
+          <figure class="frame-arch" data-i="1"><picture><source type="image/avif" srcset="assets/photos/kelas-online-480.avif 480w, assets/photos/kelas-online-960.avif 960w" sizes="(min-width:960px) 34vw, 1px"><img src="assets/photos/kelas-online-960.webp" srcset="assets/photos/kelas-online-480.webp 480w, assets/photos/kelas-online-960.webp 960w" sizes="(min-width:960px) 34vw, 1px" alt="" loading="lazy" decoding="async" style="object-position:50% 40%"></picture></figure>
+          <figure class="frame-arch" data-i="2"><picture><source type="image/avif" srcset="assets/photos/guru-papan-480.avif 480w, assets/photos/guru-papan-960.avif 960w" sizes="(min-width:960px) 34vw, 1px"><img src="assets/photos/guru-papan-960.webp" srcset="assets/photos/guru-papan-480.webp 480w, assets/photos/guru-papan-960.webp 960w" sizes="(min-width:960px) 34vw, 1px" alt="" loading="lazy" decoding="async" style="object-position:45% 70%"></picture></figure>
+          <figure class="frame-arch" data-i="3"><picture><source type="image/avif" srcset="assets/photos/quran-rehal-480.avif 480w, assets/photos/quran-rehal-960.avif 960w" sizes="(min-width:960px) 34vw, 1px"><img src="assets/photos/quran-rehal-960.webp" srcset="assets/photos/quran-rehal-480.webp 480w, assets/photos/quran-rehal-960.webp 960w" sizes="(min-width:960px) 34vw, 1px" alt="" loading="lazy" decoding="async"></picture></figure>
+          <span class="why-ar on" lang="ar" data-i="0">مَنْهَج</span>
+          <span class="why-ar" lang="ar" data-i="1">عَنْ بُعْد</span>
+          <span class="why-ar" lang="ar" data-i="2">مُعَلِّم</span>
+          <span class="why-ar" lang="ar" data-i="3">القُرْآن</span>
+      </div>
+      <div class="why-kanan">
+      <h2 class="why-h" id="why-h" data-judul>Kenapa LCDU?</h2>
+      <ol class="why-list">
+        <li class="why-item">
+          <div class="why-media" aria-hidden="true"><figure class="frame-arch"><picture><source type="image/avif" srcset="assets/photos/menulis-480.avif 480w, assets/photos/menulis-960.avif 960w" sizes="(min-width:960px) 1px, 76vw"><img src="assets/photos/menulis-960.webp" srcset="assets/photos/menulis-480.webp 480w, assets/photos/menulis-960.webp 960w" sizes="(min-width:960px) 1px, 76vw" alt="" loading="lazy" decoding="async"></picture></figure><span class="why-ar" lang="ar">مَنْهَج</span></div>
+          <h3 class="why-judul">Kurikulum internasional</h3>
+          <p>Materi mengikuti kurikulum internasional, disesuaikan dengan level kamu.</p>
+        </li>
+        <li class="why-item">
+          <div class="why-media" aria-hidden="true"><figure class="frame-arch"><picture><source type="image/avif" srcset="assets/photos/kelas-online-480.avif 480w, assets/photos/kelas-online-960.avif 960w" sizes="(min-width:960px) 1px, 76vw"><img src="assets/photos/kelas-online-960.webp" srcset="assets/photos/kelas-online-480.webp 480w, assets/photos/kelas-online-960.webp 960w" sizes="(min-width:960px) 1px, 76vw" alt="" loading="lazy" decoding="async" style="object-position:50% 40%"></picture></figure><span class="why-ar" lang="ar">عَنْ بُعْد</span></div>
+          <h3 class="why-judul">Kelas online yang rapi</h3>
+          <p>Tatap muka lewat Zoom. Materi, tugas, dan link kelas tersimpan rapi di Canvas LMS.</p>
+        </li>
+        <li class="why-item">
+          <div class="why-media" aria-hidden="true"><figure class="frame-arch"><picture><source type="image/avif" srcset="assets/photos/guru-papan-480.avif 480w, assets/photos/guru-papan-960.avif 960w" sizes="(min-width:960px) 1px, 76vw"><img src="assets/photos/guru-papan-960.webp" srcset="assets/photos/guru-papan-480.webp 480w, assets/photos/guru-papan-960.webp 960w" sizes="(min-width:960px) 1px, 76vw" alt="" loading="lazy" decoding="async" style="object-position:45% 70%"></picture></figure><span class="why-ar" lang="ar">مُعَلِّم</span></div>
+          <h3 class="why-judul">Guru tersertifikasi</h3>
+          <p>Guru ramah dan bersertifikat Cambridge: TKT, CELTA, hingga DELTA.</p>
+        </li>
+        <li class="why-item">
+          <div class="why-media" aria-hidden="true"><figure class="frame-arch"><picture><source type="image/avif" srcset="assets/photos/quran-rehal-480.avif 480w, assets/photos/quran-rehal-960.avif 960w" sizes="(min-width:960px) 1px, 76vw"><img src="assets/photos/quran-rehal-960.webp" srcset="assets/photos/quran-rehal-480.webp 480w, assets/photos/quran-rehal-960.webp 960w" sizes="(min-width:960px) 1px, 76vw" alt="" loading="lazy" decoding="async"></picture></figure><span class="why-ar" lang="ar">القُرْآن</span></div>
+          <h3 class="why-judul">Dibuka dengan Al-Qur'an</h3>
+          <p>Setiap pertemuan diawali membaca dan mendiskusikan ayat Al-Qur'an.</p>
+        </li>
+      </ol>
+      </div>
+    </div>
+  </div>
+  <!-- pembatas Kenapa → Pilih kelas: tepi mihrab (lengkung lancip), warna = awal latar fase siang -->
+  <svg class="batas-mihrab" data-muncul viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true" focusable="false" style="--batas-isi:var(--pagi-bg);--batas-garis:color-mix(in srgb,var(--putih) 70%,transparent)"><path class="garis" pathLength="1" d="M0 84H372C440 84 560 30 600 -8 640 30 760 84 828 84H1200"/><path class="isi" d="M0 120V100H360C430 100 560 46 600 10 640 46 770 100 840 100H1200V120Z"/></svg>
+</section>
+</div>
+
+<div class="fase" data-fase="siang">
+<!-- ============ PILIH KELAS: layar terbelah Inggris | Arab ============
+     Semua informasi terlihat tanpa interaksi; geser/ketuk/hover hanya menekankan satu sisi. Desktop (≥ 1000px): latar
+     .latar-en/.latar-ar di belakang kolom tetap 50/50, digeser dengan transform (lihat CSS).
+     JADWAL PERLU VERIFIKASI (lihat README): Inggris Senin & Rabu, Arab Selasa & Kamis, 16.00–17.30 WIB;
+     Weekend Sabtu 13.00–16.00 WIB. Hari ditandai kotak menyala (nama aksesibel di tiap hari kelas). Tanpa daftar level. -->
+<section data-lentera class="band classes" id="kelas" aria-labelledby="cls-h">
+  <div class="wrap"><h2 class="h2" id="cls-h" data-judul>Pilih kelasmu</h2></div>
+  <div class="split" id="split" data-state="imbang">
+    <div class="latar latar-ar" aria-hidden="true"><i class="orn-net orn-net--kain"></i><span class="side-glyph" lang="ar">أب</span></div>
+    <div class="latar latar-en" aria-hidden="true"><div class="latar-en-isi"><i class="orn-net orn-net--kain"></i><span class="side-glyph">Aa</span></div></div>
+    <div class="side side-en" data-side="en">
+      <i class="orn-net orn-net--kain" aria-hidden="true"></i>
+      <span class="side-glyph" aria-hidden="true">Aa</span>
+      <div class="side-isi">
+        <div class="side-teks">
+          <h3 class="side-judul">Bahasa Inggris</h3>
+          <p class="side-desc">Belajar bersama guru profesional sesuai level kamu. Porsi terbesar untuk berbicara (speaking), dengan grammar yang tetap dibahas tuntas.</p>
+          <div class="side-info">
+            <ul class="orn-list cls-fokus" aria-label="Fokus belajar kelas Inggris"><li>Speaking</li><li>Grammar</li><li>Listening</li><li>Writing</li></ul>
+            <div class="sched">
+              <div class="track"><p class="track-label"><b>Weekday</b> 16.00–17.30 WIB</p><ul class="days" aria-label="Hari kelas weekday"><li class="day on"><span aria-hidden="true">Sen</span><span class="sr-only">Senin, kelas Inggris</span></li><li class="day" aria-hidden="true">Sel</li><li class="day on"><span aria-hidden="true">Rab</span><span class="sr-only">Rabu, kelas Inggris</span></li><li class="day" aria-hidden="true">Kam</li><li class="day" aria-hidden="true">Jum</li><li class="day" aria-hidden="true">Sab</li><li class="day" aria-hidden="true">Min</li></ul></div>
+              <div class="track"><p class="track-label"><b>Weekend</b> 13.00–16.00 WIB</p><ul class="days" aria-label="Hari kelas weekend"><li class="day" aria-hidden="true">Sen</li><li class="day" aria-hidden="true">Sel</li><li class="day" aria-hidden="true">Rab</li><li class="day" aria-hidden="true">Kam</li><li class="day" aria-hidden="true">Jum</li><li class="day on"><span aria-hidden="true">Sab</span><span class="sr-only">Sabtu, kelas Inggris</span></li><li class="day" aria-hidden="true">Min</li></ul></div>
+            </div>
+          </div>
+        </div>
+        <!-- FOTO STOK SEMENTARA (Inggris): ganti dengan foto kelas asli LCDU -->
+        <figure class="frame-arch side-foto" aria-hidden="true"><picture><source type="image/avif" srcset="assets/photos/kelas-online-480.avif 480w, assets/photos/kelas-online-960.avif 960w" sizes="(min-width:1000px) 230px, 56vw"><img src="assets/photos/kelas-online-480.webp" srcset="assets/photos/kelas-online-480.webp 480w, assets/photos/kelas-online-960.webp 960w" sizes="(min-width:1000px) 230px, 56vw" width="480" height="600" alt="" loading="lazy" decoding="async" style="object-position:50% 35%"></picture></figure>
+      </div>
+    </div>
+    <div class="split-garis" aria-hidden="true"></div>
+    <div class="split-pegangan" role="slider" tabindex="0" aria-label="Penekanan antara kelas Inggris dan kelas Arab" aria-orientation="horizontal" aria-valuemin="35" aria-valuemax="65" aria-valuenow="50" aria-valuetext="Inggris 50%, Arab 50%"><svg viewBox="0 0 72 72" aria-hidden="true" focusable="false"><circle cx="36" cy="36" r="36" fill="#1E6B3A"/><circle cx="36" cy="36" r="31.5" fill="#7FA33F"/><circle cx="36" cy="36" r="28.5" fill="#FFFFFF"/><circle cx="36" cy="36" r="25.5" fill="#E23B4A"/><g fill="#111111"><path d="M30 15.5c1.6 2 2.2 3.6 2.2 4.8a2.2 2.2 0 0 1-4.4 0c0-1.2.6-2.8 2.2-4.8Z"/><path d="M42 15.5c1.6 2 2.2 3.6 2.2 4.8a2.2 2.2 0 0 1-4.4 0c0-1.2.6-2.8 2.2-4.8Z"/><path d="M30 56.5c-1.6-2-2.2-3.6-2.2-4.8a2.2 2.2 0 0 1 4.4 0c0 1.2-.6 2.8-2.2 4.8Z"/><path d="M42 56.5c-1.6-2-2.2-3.6-2.2-4.8a2.2 2.2 0 0 1 4.4 0c0 1.2-.6 2.8-2.2 4.8Z"/></g><path d="M24 28l-8 8 8 8M48 28l8 8-8 8" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="side side-ar" data-side="ar">
+      <i class="orn-net orn-net--kain" aria-hidden="true"></i>
+      <span class="side-glyph" aria-hidden="true" lang="ar">أب</span>
+      <div class="side-isi">
+        <div class="side-teks">
+          <h3 class="side-judul">Bahasa Arab</h3>
+          <p class="side-desc">Belajar bersama guru profesional sesuai level kamu. Banyak latihan percakapan (muhadatsah), dengan kaidah bahasa (nahwu) yang tetap dipelajari.</p>
+          <div class="side-info">
+            <ul class="orn-list cls-fokus" aria-label="Fokus belajar kelas Arab"><li>Muhadatsah</li><li>Nahwu</li><li>Mufradat</li><li>Qira'ah</li></ul>
+            <div class="sched">
+              <div class="track"><p class="track-label"><b>Weekday</b> 16.00–17.30 WIB</p><ul class="days" aria-label="Hari kelas weekday"><li class="day" aria-hidden="true">Sen</li><li class="day on"><span aria-hidden="true">Sel</span><span class="sr-only">Selasa, kelas Arab</span></li><li class="day" aria-hidden="true">Rab</li><li class="day on"><span aria-hidden="true">Kam</span><span class="sr-only">Kamis, kelas Arab</span></li><li class="day" aria-hidden="true">Jum</li><li class="day" aria-hidden="true">Sab</li><li class="day" aria-hidden="true">Min</li></ul></div>
+              <div class="track"><p class="track-label"><b>Weekend</b> 13.00–16.00 WIB</p><ul class="days" aria-label="Hari kelas weekend"><li class="day" aria-hidden="true">Sen</li><li class="day" aria-hidden="true">Sel</li><li class="day" aria-hidden="true">Rab</li><li class="day" aria-hidden="true">Kam</li><li class="day" aria-hidden="true">Jum</li><li class="day on"><span aria-hidden="true">Sab</span><span class="sr-only">Sabtu, kelas Arab</span></li><li class="day" aria-hidden="true">Min</li></ul></div>
+            </div>
+          </div>
+        </div>
+        <!-- FOTO STOK SEMENTARA (Arab): ganti dengan foto kelas asli LCDU -->
+        <figure class="frame-arch side-foto" aria-hidden="true"><picture><source type="image/avif" srcset="assets/photos/kaligrafi-480.avif 480w, assets/photos/kaligrafi-960.avif 960w" sizes="(min-width:1000px) 230px, 56vw"><img src="assets/photos/kaligrafi-480.webp" srcset="assets/photos/kaligrafi-480.webp 480w, assets/photos/kaligrafi-960.webp 960w" sizes="(min-width:1000px) 230px, 56vw" width="480" height="600" alt="" loading="lazy" decoding="async" style="object-position:55% 50%"></picture></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- pembatas Pilih kelas → Biaya: tepi biji semangka -->
+<div class="batas-biji" data-muncul aria-hidden="true"><i class="orn-seeds atas"></i><i class="orn-seeds bawah"></i></div>
+<section data-lentera class="cost-blok" id="biaya" aria-labelledby="cost-h">
+  <i class="orn-seeds cost-biji kiri" aria-hidden="true"></i>
+  <i class="orn-seeds cost-biji kanan" aria-hidden="true"></i>
+  <div class="wrap cost">
+    <div class="cost-copy">
+      <h2 class="cost-label" id="cost-h" data-judul>Berapa biayanya?</h2>
+      <p class="cost-besar">Tanpa <span class="cost-kunci">biaya bulanan</span>.</p>
+      <p class="cost-dukung">LCDU adalah program nirlaba. Kamu cukup membayar satu kali per term (semester).</p>
+    </div>
+    <div class="receipt-wrap">
+      <i class="orn-slice cost-slice" aria-hidden="true"></i>
+      <div class="printer" aria-hidden="true"></div>
+      <div class="struk-jendela">
+        <div class="receipt" id="receipt">
+          <div class="receipt-head"><b>LCDU<span class="sr-only">,</span></b><span>Rincian biaya</span></div>
+          <div class="rline"><span>Biaya bulanan</span><span>Rp0</span></div>
+          <div class="rline rline-donasi"><span>Donasi untuk Palestina (tidak wajib)</span><span>sebebasnya</span></div>
+          <div class="rtotal"><span>Total per term (semester)</span><span>Rp100.000</span></div>
+          <p class="receipt-foot"><i class="orn-band" aria-hidden="true"></i><span lang="ar">جَزَاكُمُ اللّٰهُ خَيْرًا</span>Terima kasih sudah belajar bersama LCDU.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="cost-pita" aria-hidden="true"><i class="orn-band orn-band--tebal kain-merah"></i></div>
+</section>
+</div>
+
+<div class="fase" data-fase="sore">
+<!-- ============ CARA BERGABUNG: pilihan bahasa → kartu Placement Test → enam langkah ============
+     Pilihan bahasa (radiogroup) = kendali tunggal: tautan & status tes, nama bagian tes, arah jalur langkah.
+     Status & tautan per bahasa dari site-config.js (placement.en / placement.ar). Tanpa JS: Inggris + tautan teks ke
+     kedua tes. Checklist "Kamu siap bergabung?" dihapus (keputusan pemilik). -->
+<section data-lentera class="band gabung" id="bergabung" aria-labelledby="req-h" data-bahasa="en">
+  <div class="wrap gabung-kepala">
+    <div class="gabung-judul">
+      <h2 class="h2" id="req-h" data-judul>Cara bergabung</h2>
+      <!-- (D) syarat dipadatkan: satu kalimat dari teks checklist lama (usia, Al-Qur'an, perangkat, konsisten); tanpa syarat baru -->
+      <p class="gabung-syarat">Untuk usia 16 tahun ke atas yang bisa membaca Al-Qur'an, punya laptop atau HP untuk belajar, dan siap konsisten sampai term selesai.</p>
+    </div>
+    <fieldset class="pilih-bahasa">
+      <legend>Aku mau belajar:</legend>
+      <label><input type="radio" name="bahasa" value="en" checked><span>Inggris</span></label>
+      <label><input type="radio" name="bahasa" value="ar"><span>Arab</span></label>
+    </fieldset>
+  </div>
+
+  <!-- (B) Kartu Placement Test: "lembar ujian" LCDU. Fakta dari halaman resmi lcdu.org/en-placement-rule/ & /ar-placement-rule/
+       (diverifikasi pemilik): 20 listening, 20 reading, 30 grammar; maks. 60 menit; satu kali duduk; audio maks. 2 kali.
+       JANGAN menambah durasi per bagian, nilai kelulusan, atau hasil. Status & tautan per bahasa dari site-config.js. -->
+  <div class="wrap">
+    <article class="pt-kartu" id="placement" aria-labelledby="pt-h" data-open="false">
+      <div class="pt-isi">
+        <h3 class="pt-judul" id="pt-h">Placement Test</h3>
+        <p class="pt-tujuan">Tes singkat untuk menentukan kelas yang pas untukmu.</p>
+        <ul class="pt-komposisi" aria-label="Komposisi soal: 70 soal">
+          <li class="pt-kel kel-1" tabindex="0"><span class="pt-titik" aria-hidden="true"><i style="--n:0"></i><i style="--n:1"></i><i style="--n:2"></i><i style="--n:3"></i><i style="--n:4"></i><i style="--n:5"></i><i style="--n:6"></i><i style="--n:7"></i><i style="--n:8"></i><i style="--n:9"></i><i style="--n:10"></i><i style="--n:11"></i><i style="--n:12"></i><i style="--n:13"></i><i style="--n:14"></i><i style="--n:15"></i><i style="--n:16"></i><i style="--n:17"></i><i style="--n:18"></i><i style="--n:19"></i></span><span class="pt-label"><b data-en="Listening" data-ar="Istima'">Listening</b> 20 soal</span></li>
+          <li class="pt-kel kel-2" tabindex="0"><span class="pt-titik" aria-hidden="true"><i style="--n:20"></i><i style="--n:21"></i><i style="--n:22"></i><i style="--n:23"></i><i style="--n:24"></i><i style="--n:25"></i><i style="--n:26"></i><i style="--n:27"></i><i style="--n:28"></i><i style="--n:29"></i><i style="--n:30"></i><i style="--n:31"></i><i style="--n:32"></i><i style="--n:33"></i><i style="--n:34"></i><i style="--n:35"></i><i style="--n:36"></i><i style="--n:37"></i><i style="--n:38"></i><i style="--n:39"></i></span><span class="pt-label"><b data-en="Reading" data-ar="Qira'ah">Reading</b> 20 soal</span></li>
+          <li class="pt-kel kel-3" tabindex="0"><span class="pt-titik" aria-hidden="true"><i style="--n:40"></i><i style="--n:41"></i><i style="--n:42"></i><i style="--n:43"></i><i style="--n:44"></i><i style="--n:45"></i><i style="--n:46"></i><i style="--n:47"></i><i style="--n:48"></i><i style="--n:49"></i><i style="--n:50"></i><i style="--n:51"></i><i style="--n:52"></i><i style="--n:53"></i><i style="--n:54"></i><i style="--n:55"></i><i style="--n:56"></i><i style="--n:57"></i><i style="--n:58"></i><i style="--n:59"></i><i style="--n:60"></i><i style="--n:61"></i><i style="--n:62"></i><i style="--n:63"></i><i style="--n:64"></i><i style="--n:65"></i><i style="--n:66"></i><i style="--n:67"></i><i style="--n:68"></i><i style="--n:69"></i></span><span class="pt-label"><b data-en="Grammar" data-ar="Tata bahasa">Grammar</b> 30 soal</span></li>
+        </ul>
+        <p class="pt-catatan">Dikerjakan sekali duduk: jawaban tidak tersimpan bila halaman ditinggalkan sebelum selesai.
+          Audio diputar maksimal 2 kali, jadi siapkan speaker atau headset. Tanpa auto translate, tanpa bertanya
+          kepada orang lain, tanpa membuka tab lain. Soal yang tidak kamu pahami, kosongkan saja.</p>
+        <div class="pt-aksi">
+          <p class="pt-status" id="pt-status">Placement Test <span class="pt-nama-bhs">Bahasa Inggris</span> sedang ditutup sementara. Tanyakan ke admin kapan dibuka lagi.</p>
+          <a class="btn btn-sun pt-mulai" href="https://lcdu.org/en-placement-rule/" target="_blank" rel="noopener">Mulai Placement Test<span class="sr-only"> <span class="pt-nama-bhs">Bahasa Inggris</span> (buka di tab baru)</span></a>
+          <a class="btn btn-sun pt-tanya" href="https://wa.me/628196009333" data-wa="placement">Tanya admin lewat WhatsApp</a>
+          <p class="pt-nojs">Halaman tes: <a href="https://lcdu.org/en-placement-rule/">Bahasa Inggris</a> · <a href="https://lcdu.org/ar-placement-rule/">Bahasa Arab</a></p>
+        </div>
+      </div>
+      <div class="pt-samping">
+        <figure class="pt-waktu">
+          <svg viewBox="0 0 120 120" aria-hidden="true" focusable="false"><circle class="cincin-dasar" cx="60" cy="60" r="50"/><circle class="cincin-isi" cx="60" cy="60" r="50" pathLength="1"/></svg>
+          <figcaption><b>60</b><span>menit, maks.</span></figcaption>
+        </figure>
+        <div class="pt-suara-blok">
+          <button class="pt-suara" type="button" aria-describedby="pt-suara-ket"><span class="pt-gelombang" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>Tes suara</button>
+          <p class="pt-suara-ket" id="pt-suara-ket" aria-live="polite">Putar nada pendek untuk memastikan speaker atau headset terdengar.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <!-- (C) Enam langkah (teks yang sudah ada). Desktop: tali lentera melintang, lentera menyala berurutan sekali; arah
+       mengikuti pilihan bahasa (Arab = dicerminkan kanan→kiri lewat transform, urutan baca DOM tetap 1→6).
+       HP: daftar vertikal rapat, benang menghubungkan nomor. Langkah 1 menaut ke kartu Placement Test. -->
+  <div class="wrap jalur-wrap">
+    <h3 class="jalur-judul" id="jalur-h">Enam langkah sampai kelas pertama</h3>
+    <div class="jalur" id="jalur">
+      <svg class="jalur-tali" viewBox="0 0 1200 48" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path class="tali-dasar" d="M0 10 C40 10 60 38 100 38 C140 38 160 10 200 10 C240 10 260 38 300 38 C340 38 360 10 400 10 C440 10 460 38 500 38 C540 38 560 10 600 10 C640 10 660 38 700 38 C740 38 760 10 800 10 C840 10 860 38 900 38 C940 38 960 10 1000 10 C1040 10 1060 38 1100 38 C1140 38 1160 10 1200 10"/><path class="tali-rajut" d="M0 10 C40 10 60 38 100 38 C140 38 160 10 200 10 C240 10 260 38 300 38 C340 38 360 10 400 10 C440 10 460 38 500 38 C540 38 560 10 600 10 C640 10 660 38 700 38 C740 38 760 10 800 10 C840 10 860 38 900 38 C940 38 960 10 1000 10 C1040 10 1060 38 1100 38 C1140 38 1160 10 1200 10"/></svg>
+      <ol class="jalur-langkah" aria-labelledby="jalur-h">
+      <li class="langkah" style="--i:0"><span class="langkah-lentera" aria-hidden="true"></span><span class="langkah-no" aria-hidden="true">1</span><h4><a href="#placement">Kerjakan Placement Test</a></h4><p>Untuk mengetahui level yang pas buat kamu.</p></li>
+      <li class="langkah" style="--i:1"><span class="langkah-lentera" aria-hidden="true"></span><span class="langkah-no" aria-hidden="true">2</span><h4>Kirim hasilnya</h4><p>Screenshot hasil tes, lalu kirim ke Admin LCDU (Mr. Syahril).</p></li>
+      <li class="langkah" style="--i:2"><span class="langkah-lentera" aria-hidden="true"></span><span class="langkah-no" aria-hidden="true">3</span><h4>Dapatkan kelas</h4><p>Admin memberi tahu kelas yang tersedia untuk kamu.</p></li>
+      <li class="langkah" style="--i:3"><span class="langkah-lentera" aria-hidden="true"></span><span class="langkah-no" aria-hidden="true">4</span><h4>Registrasi</h4><p>Isi formulir registrasi dan bayar biaya term pertama.</p></li>
+      <li class="langkah" style="--i:4"><span class="langkah-lentera" aria-hidden="true"></span><span class="langkah-no" aria-hidden="true">5</span><h4>Masuk grup dan Canvas</h4><p>Kamu masuk grup WhatsApp kelas dan mengaktifkan akun Canvas LMS.</p></li>
+      <li class="langkah" style="--i:5"><span class="langkah-lentera" aria-hidden="true"></span><span class="langkah-no" aria-hidden="true">6</span><h4>Mulai belajar</h4><p>Materi dan link Zoom tersedia di Canvas. Sampai jumpa di kelas.</p></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- pembatas Cara bergabung → Testimoni: satu garis daun zaitun yang tergambar -->
+<div class="batas-daun" data-muncul aria-hidden="true"><svg class="kiri" viewBox="0 0 100 2" preserveAspectRatio="none"><line x1="100" y1="1" x2="0" y2="1" pathLength="1"/></svg><i class="orn-leaf"></i><svg viewBox="0 0 100 2" preserveAspectRatio="none"><line x1="0" y1="1" x2="100" y2="1" pathLength="1"/></svg></div>
+
+<!-- ============ TESTIMONI ============ -->
+<section data-lentera class="band stories" id="testimoni" aria-labelledby="st-h">
+  <div class="wrap stories-grid">
+    <div style="display:grid;gap:20px">
+      <h2 class="h2" id="st-h" data-judul>Kata mereka yang sudah belajar</h2>
+      <p class="lede">Seret kartu ke samping untuk membaca cerita berikutnya.</p>
+      <div class="stack-ctrl"><button class="btn btn-ghost" id="next-story" type="button">Cerita berikutnya</button></div>
+    </div>
+    <div class="stack" id="stack">
+      <article class="card"><div class="card-mark" aria-hidden="true">“</div><p class="card-quote">LCDU adalah kursus yang luar biasa bagi seseorang yang ingin belajar atau meningkatkan kemampuan bahasa Inggris mereka.</p><div class="card-who"><span class="avatar">AS</span><div><b>Aninda Salma</b><span>Siswa Pre-Intermediate</span></div></div></article>
+<article class="card"><div class="card-mark" aria-hidden="true">“</div><p class="card-quote">Gaya belajarnya dikembangkan lebih lanjut agar siswa lebih cepat memahami materi. Program ini sangat baik. Terima kasih banyak, guru.</p><div class="card-who"><span class="avatar">FR</span><div><b>Fitriza Rahma</b><span>Siswa Elementary</span></div></div></article>
+      <article class="card you"><div class="card-mark" aria-hidden="true">“</div><p class="card-quote">Cerita berikutnya bisa datang dari kamu.</p></article>
+    </div>
+  </div>
+</section>
+</div>
+
+<div class="fase" data-fase="senja">
+<!-- ============ TIM ============ -->
+<section data-lentera class="band" id="tim" aria-labelledby="team-h">
+  <div class="wrap">
+    <div class="team-head">
+      <h2 class="h2" id="team-h" data-judul>Yang akan menemani kamu belajar</h2>
+      <div class="chips" id="chips" role="group" aria-label="Saring tim"></div>
+    </div>
+    <ul class="team" id="team"></ul>
+    <p class="team-note">Arahkan kursor ke kartu untuk melihat sertifikasi. Kotak warna adalah slot foto.</p>
+  </div>
+</section>
+
+<!-- pembatas Tim → FAQ: kata Arab raksasa (مُعَلِّم = guru, kata yang sudah dipakai) menyeberangi batas -->
+<div class="batas-kata" data-muncul aria-hidden="true"><span lang="ar">مُعَلِّم</span></div>
+
+<!-- ============ FAQ (stub: isi didesain di sesi tersendiri) ============ -->
+<section data-lentera class="band" id="faq" aria-labelledby="faq-h">
+  <div class="wrap">
+    <h2 class="h2" id="faq-h" data-judul>Pertanyaan yang sering diajukan</h2>
+    <p class="stub-note">Isi section ini menyusul.</p>
+  </div>
+</section>
+</div>
+
+<div class="fase" data-fase="malam">
+<!-- ============ DONASI UNTUK PALESTINA (melalui AWG; data dari site-config.js) ============ -->
+<section data-lentera="zaitun" class="band donate" id="donasi" aria-labelledby="don-h">
+  <div class="wrap donate-grid">
+    <div style="display:grid;gap:20px">
+      <h2 class="h2" id="don-h" data-judul>Donasi untuk Palestina</h2>
+      <p class="lede">Donasi bersifat sukarela dan terpisah dari biaya kelas. Donasi disalurkan melalui <a href="https://aqsaworkinggroup.com/" data-cfg-href="donasi.url" data-cfg-text="donasi.mitra">Aqsa Working Group (AWG)</a>, mitra lama LCDU.</p>
+      <p class="donate-ar" lang="ar">مَّثَلُ الَّذِينَ يُنفِقُونَ أَمْوَالَهُمْ فِي سَبِيلِ اللَّهِ كَمَثَلِ حَبَّةٍ أَنبَتَتْ سَبْعَ سَنَابِلَ</p>
+      <p class="donate-ref">QS. Al-Baqarah: 261</p>
+    </div>
+    <div class="acct">
+      <small data-cfg-text="rekening.bank">Bank Muamalat</small>
+      <p class="acct-num" id="acct" data-cfg-text="rekening.nomor">10.10.11.83.94</p>
+      <small>a.n. <span data-cfg-text="rekening.atasNama">Yayasan Taqwa Cerdas Kreatif</span></small>
+      <div class="acct-row">
+        <button class="btn btn-ink" id="copy" type="button">Salin nomor rekening</button>
+        <a class="btn btn-ghost" href="https://wa.me/628196009333" data-wa="konfirmasi">Konfirmasi transfer</a>
+        <span class="copied" id="copied" hidden>Nomor tersalin</span>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+</div><!-- /.hari -->
+</main>
+
+<footer class="fase" data-fase="malam">
+  <div class="orn-band foot-band" data-tergambar aria-hidden="true"></div>
+  <div class="wrap foot">
+  <div class="foot-grid">
+    <div class="wotd" aria-live="polite">
+      <h3>Kosakata hari ini</h3>
+      <div class="wotd-pair">
+        <div><span class="wotd-en" id="w-en" lang="en">resilient</span><span id="w-en-id">tangguh, cepat bangkit</span></div>
+        <div><span class="wotd-ar" id="w-ar" lang="ar">صَبْر</span><span id="w-ar-id">sabar</span></div>
+      </div>
+    </div>
+    <div>
+      <h4>Jelajahi</h4>
+      <ul class="foot-links"><li><a href="#kelas">Kelas</a></li><li><a href="#biaya">Biaya</a></li><li><a href="#bergabung">Cara bergabung</a></li><li><a href="#faq">FAQ</a></li><li><a href="#donasi">Donasi</a></li></ul>
+    </div>
+    <div>
+      <h4>Hubungi kami</h4>
+      <ul class="foot-links"><li><a href="https://wa.me/628196009333" data-wa="umum">WhatsApp admin</a></li><li><a href="#">Instagram</a></li><li><a href="#">Alamat sekretariat</a></li></ul>
+    </div>
+  </div>
+  <div class="partners partners-row" aria-label="Mitra">
+    <p>Bekerja sama dengan</p>
+    <div class="logos"><span class="logo-slot">Logo mitra</span><span class="logo-slot">Logo mitra</span><span class="logo-slot">Logo mitra</span><span class="logo-slot">Logo mitra</span></div>
+  </div>
+  <div class="wordmark"><img class="logo-light" src="assets/brand/web/lcdu-logo-color.png" width="560" height="216" alt="LCDU, For a Better Ummah" loading="lazy" decoding="async"><img class="logo-dark" src="assets/brand/web/lcdu-logo-white.png" width="560" height="216" alt="LCDU, For a Better Ummah" loading="lazy" decoding="async"></div>
+  <div class="legal"><span>© 2026 LCDU, <a class="tautan-yayasan" href="https://alfacentauri.sch.id/yayasan/" data-cfg-href="yayasan.url" target="_blank" rel="noopener">Yayasan Taqwa Cerdas Kreatif<span class="sr-only"> (buka di tab baru)</span></a></span><span>Bandung, Jawa Barat</span></div>
+  </div>
+</footer>
+
+<!-- benang keffiyeh: garis tipis di gutter kiri (desktop) / garis progres di atas (HP), tergambar mengikuti scroll -->
+<div class="benang" aria-hidden="true"><i class="benang-garis"></i><i class="benang-ujung"></i></div>
+
+<a class="fab is-away" id="tanya" href="https://wa.me/628196009333" data-wa="umum" aria-label="Tanya admin lewat WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.4-.3z"/></svg>Tanya admin</a>
+
+
+<script src="site-config.js"></script>
+<script>
+(function(){
+  document.documentElement.classList.add('js');
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var fine = window.matchMedia('(pointer: fine)').matches;
+  var $ = function(s,r){return (r||document).querySelector(s)};
+  var $$ = function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
+
+  /* ---------- Nav: sembunyi selama hero; setelahnya muncul saat scroll ke atas, sembunyi saat ke bawah ---------- */
+  var nav = $('.nav'), fab = $('.fab'), heroEl = $('#hero'), lastY = window.scrollY, run = 0, grace = 0, inHero = true, nTick = false;
+  function navUpdate(){
+    nTick = false;
+    var y = window.scrollY, dy = y - lastY; lastY = y;
+    var past = y >= heroEl.offsetTop + heroEl.offsetHeight - 80;
+    fab.classList.toggle('is-away', !past);
+    if (!past){ inHero = true; nav.classList.add('is-hidden'); return; }
+    if (inHero){ inHero = false; run = 0; grace = window.innerHeight*.8; nav.classList.remove('is-hidden'); return; }  // baru melewati hero: tampil dulu
+    if (dy < 0){ run = Math.min(run, 0) + dy; if (run < -6){ nav.classList.remove('is-hidden'); grace = 0; } }
+    else if (dy > 0){ run = Math.max(run, 0) + dy; if (run > grace + 220){ nav.classList.add('is-hidden'); grace = 0; } }  // turun ±220px dulu baru hilang
+  }
+  window.addEventListener('scroll', function(){ if (!nTick){ nTick = true; requestAnimationFrame(navUpdate); } }, {passive:true});
+  navUpdate();
+
+  /* ---------- Satu hari belajar: fase aktif mewarnai navbar (garis ±5% dari atas) & benang (tengah layar) ---------- */
+  var benang = $('.benang'), hari = $('#hari'), fases = $$('.fase');
+  if ('IntersectionObserver' in window){
+    var navIO = new IntersectionObserver(function(en){ en.forEach(function(x){ if (x.isIntersecting) nav.dataset.fase = x.target.dataset.fase; }); }, {rootMargin:'-5% 0px -94% 0px'});
+    var benangIO = new IntersectionObserver(function(en){ en.forEach(function(x){ if (x.isIntersecting) benang.dataset.fase = x.target.dataset.fase; }); }, {rootMargin:'-50% 0px -49% 0px'});
+    fases.forEach(function(f){ navIO.observe(f); benangIO.observe(f); });
+  }
+
+  /* ---------- Benang keffiyeh: tampil setelah hero; panjangnya dari CSS scroll-driven animation, atau cadangan JS ---------- */
+  var sdaView = !!(window.CSS && CSS.supports('animation-timeline: view()'));
+  var sdaBenang = sdaView && CSS.supports('timeline-scope: --a');
+  /* ruas benang: satu .ruas-isi per elemen aliran (anak langsung .fase di #hari + footer) */
+  var kaki = $('footer.fase'), ruas = $$('.hari > .fase > *').concat(kaki ? [kaki] : []), ruasTerlihat = [];
+  ruas.forEach(function(el){ var i = document.createElement('i'); i.className = 'ruas-isi'; i.setAttribute('aria-hidden', 'true'); el.appendChild(i); });
+  /* garis tenun di batas tepat setelah tiap section (elemen aliran yang didahului <section>) */
+  var TENUN_D = 'M0 2C42 2 64 13 112 16 158 19 182 22 182 27 182 33 146 38 88 38 50 38 26 36 0 38';
+  var TENUN_M = 'M0 11C60 1 120 1 180 11S300 21 360 11';
+  var tenunList = [];
+  ruas.forEach(function(el, k){
+    if (!k || ruas[k - 1].tagName !== 'SECTION') return;
+    var svg = '';
+    [['tenun-d', '0 0 186 40', TENUN_D, ' preserveAspectRatio="none" style="--jangkau:' + (140 + (tenunList.length * 53) % 81) + 'px"'], ['tenun-m', '0 0 360 22', TENUN_M, ' preserveAspectRatio="none"']].forEach(function(v){
+      svg += '<svg class="tenun ' + v[0] + '" viewBox="' + v[1] + '"' + v[3] + ' aria-hidden="true" focusable="false"><mask id="tn-' + v[0] + '-' + k + '" maskUnits="userSpaceOnUse"><path pathLength="1" d="' + v[2] + '"/></mask>'
+        + '<path class="jahit" mask="url(#tn-' + v[0] + '-' + k + ')" d="' + v[2] + '"/>' + (v[0] === 'tenun-d' ? '<path class="jahit jahit-2" mask="url(#tn-' + v[0] + '-' + k + ')" transform="translate(0 3)" d="' + v[2] + '"/>' : '') + '</svg>';
+    });
+    el.insertAdjacentHTML('beforeend', svg);
+    tenunList.push.apply(tenunList, $$('.tenun', el));
+  });
+  if ('IntersectionObserver' in window && !reduce){
+    var tenunIO = new IntersectionObserver(function(en){ en.forEach(function(x){ if (x.isIntersecting){ x.target.classList.add('tergambar'); tenunIO.unobserve(x.target); } }); }, {rootMargin:'0px 0px -15% 0px'});
+    tenunList.forEach(function(t){ tenunIO.observe(t); });
+  } else tenunList.forEach(function(t){ t.classList.add('tergambar'); });
+  if (!sdaView && 'IntersectionObserver' in window){
+    var ruasIO = new IntersectionObserver(function(en){ en.forEach(function(x){
+      var isi = $('.ruas-isi', x.target), k = ruasTerlihat.indexOf(isi);
+      if (x.isIntersecting && k < 0) ruasTerlihat.push(isi); else if (!x.isIntersecting && k > -1) ruasTerlihat.splice(k, 1);
+    }); });
+    ruas.forEach(function(el){ ruasIO.observe(el); });
+  }
+  if (!reduce){
+    var bTick = false;
+    var benangUpdate = function(){
+      bTick = false;
+      /* mulai saat Pengantar mencapai tengah layar (= animation-range "entry 50%"), selesai di akhir Donasi */
+      var r = hari.getBoundingClientRect(), half = window.innerHeight / 2, picu = window.innerHeight * .52;
+      var akhir = kaki ? kaki.getBoundingClientRect().bottom : r.bottom;
+      benang.classList.toggle('is-on', r.top <= picu && akhir >= picu);
+      if (!sdaBenang) benang.style.setProperty('--benang', Math.min(1, Math.max(0, (half - r.top) / Math.max(1, r.height - half))));
+      /* cadangan tanpa view timeline: isi ruas yang sedang terlihat ditulis langsung (clip-path di elemen 8px) */
+      if (!sdaView) ruasTerlihat.forEach(function(el){
+        var q = el.parentElement.getBoundingClientRect(), p = Math.min(1, Math.max(0, (picu - q.top) / Math.max(1, q.height)));
+        el.style.clipPath = 'inset(0 0 ' + ((1 - p) * 100).toFixed(2) + '% 0)';
+      });
+    };
+    window.addEventListener('scroll', function(){ if (!bTick){ bTick = true; requestAnimationFrame(benangUpdate); } }, {passive:true});
+    window.addEventListener('resize', benangUpdate);
+    benangUpdate();
+  } else if ('IntersectionObserver' in window){
+    /* reduced-motion: benang diam & utuh, tampil setelah hero (tanpa scroll listener) */
+    new IntersectionObserver(function(en){ benang.classList.toggle('is-on', en[0].boundingClientRect.top <= window.innerHeight / 2); },
+      {rootMargin:'-50% 0px -50% 0px'}).observe(hari);
+  }
+
+  /* ---------- Lentera di benang: section [data-lentera] → satu penanda (desktop) + satu titik di garis atas (HP) ----------
+     Letak dihitung sekali (muat, load, resize) — bukan per scroll. Satu IntersectionObserver dengan area di atas garis
+     picu (52% tinggi layar, tempat bulat kuning) mengamati penanda: saat dilewati (atau sudah terlewati ketika halaman
+     dibuka) → .nyala sekali, juga semua lentera sebelumnya. Tanpa IO: tidak dibuat. */
+  (function(){
+    var bagian = $$('[data-lentera]'); if (!bagian.length || !('IntersectionObserver' in window)) return;
+    /* ranting ke-i: batang melengkung dari benang (kanan, x=108) ke kiri; daun lancip berselang atas/bawah di sepanjang
+       batang; jumlah daun 2 → 5 makin ke bawah; varian zaitun 5 daun + 3 buah. Koordinat viewBox 0..110 × 0..70, pangkal (108,24). */
+    function ranting(i, zaitun){
+      var n = zaitun ? 5 : Math.min(5, 2 + Math.ceil(i / 2)), x3 = Math.max(10, 58 - i * 6), y3 = 30 + Math.min(i, 6) * 1.6;
+      var P = [[108, 24], [84, 22], [56, 27], [x3, y3]];
+      function titik(t){ var u = 1 - t; return [0, 1].map(function(k){ return u*u*u*P[0][k] + 3*u*u*t*P[1][k] + 3*u*t*t*P[2][k] + t*t*t*P[3][k]; }); }
+      var svg = '<svg class="lt-ranting" viewBox="0 0 110 70" aria-hidden="true" focusable="false"><path class="batang" pathLength="1" d="M108 24C84 22 56 27 ' + x3 + ' ' + y3 + '"/>';
+      for (var k = 0; k < n; k++){
+        var t = .2 + k * (.74 / Math.max(1, n - 1)), q = titik(t), atas = k % 2 === 0;
+        svg += '<g transform="translate(' + q[0].toFixed(1) + ' ' + q[1].toFixed(1) + ') rotate(' + (atas ? -148 : 152) + ')"><path class="daun" style="--td:' + (.25 + k * .1).toFixed(2) + 's" d="M0 0C7-6.2 16-6.2 25 0 16 6.2 7 6.2 0 0Z"/></g>';
+      }
+      if (zaitun) [[.42, 1], [.62, 1], [.8, 1]].forEach(function(f, k){ var q = titik(f[0]); svg += '<ellipse class="buah" style="--td:' + (.55 + k * .08).toFixed(2) + 's" cx="' + q[0].toFixed(1) + '" cy="' + (q[1] + 6).toFixed(1) + '" rx="3.8" ry="5"/>'; });
+      return svg + '</svg>';
+    }
+    var tanda = bagian.map(function(sec, i){
+      var t = document.createElement('span');
+      t.className = 'lentera-tanda'; t.setAttribute('aria-hidden', 'true'); t.style.setProperty('--ke', i);
+      if (sec.dataset.lentera === 'zaitun') t.dataset.varian = 'zaitun';
+      t.innerHTML = '<i class="lt-cahaya"></i><i class="lt-inti"></i>' + ranting(i, sec.dataset.lentera === 'zaitun');
+      sec.appendChild(t);
+      var d = document.createElement('i'); d.className = 'lt-hp'; benang.appendChild(d);
+      return { sec: sec, h: $('h2', sec) || sec, t: t, d: d };
+    });
+    function letak(){
+      var hr = hari.getBoundingClientRect(), jarak = Math.max(1, hari.offsetHeight - window.innerHeight * .52);
+      tanda.forEach(function(o){
+        var sr = o.sec.getBoundingClientRect(), r = o.h.getBoundingClientRect();
+        /* tengah baris pertama judul = atas judul + ½ tinggi baris elemen teks pertama yang terlihat (lewati .sr-only);
+           tidak memakai posisi kata, karena kata yang menunggu animasi judul sedang bergeser */
+        var e = o.h, c;
+        while ((c = e.firstElementChild)){ while (c && c.classList.contains('sr-only')) c = c.nextElementSibling; if (!c) break; e = c; }
+        var cs = getComputedStyle(e), lh = parseFloat(cs.lineHeight) || parseFloat(cs.fontSize) * 1.2;
+        var tengah = r.top + Math.min(r.height, lh) / 2;
+        o.t.style.transform = 'translateY(' + Math.round(tengah - sr.top) + 'px)';
+        o.d.style.left = (Math.min(1, Math.max(0, (tengah - hr.top) / jarak)) * 100).toFixed(2) + '%';
+      });
+    }
+    letak();
+    window.addEventListener('load', letak);
+    var lT; window.addEventListener('resize', function(){ clearTimeout(lT); lT = setTimeout(letak, 200); });
+    function nyalakan(sampai){
+      for (var k = 0; k <= sampai; k++){
+        var o = tanda[k]; if (o.t.classList.contains('nyala')) continue;
+        o.t.classList.add('nyala'); o.d.classList.add('nyala'); ltIO.unobserve(o.t);
+        o.t.dispatchEvent(new CustomEvent('lentera-nyala', { bubbles: true }));
+      }
+    }
+    var ltIO = new IntersectionObserver(function(en){
+      en.forEach(function(x){
+        if (!x.isIntersecting && x.boundingClientRect.top > window.innerHeight * .52) return;   // belum dilewati
+        nyalakan(tanda.map(function(q){ return q.t; }).indexOf(x.target));
+      });
+    }, {rootMargin:'100000px 0px -48% 0px'});   // area pemicu = semua yang di atas garis picu (juga saat melompat jauh)
+    tanda.forEach(function(o){ ltIO.observe(o.t); });
+  })();
+
+  /* ---------- Primitif gerak: muncul, tergambar, menyala. Mati total saat prefers-reduced-motion ---------- */
+  if (!reduce && 'IntersectionObserver' in window){
+    document.documentElement.classList.add('gerak');
+    /* muncul: sekali saja */
+    var munculIO = new IntersectionObserver(function(en, ob){ en.forEach(function(x){ if (x.isIntersecting){ x.target.classList.add('is-in'); ob.unobserve(x.target); } }); }, {rootMargin:'0px 0px -8% 0px'});
+    $$('[data-muncul]').forEach(function(el){ munculIO.observe(el); });
+    /* menyala: menyala saat terlihat, padam di luar layar */
+    var nyalaIO = new IntersectionObserver(function(en){ en.forEach(function(x){ x.target.classList.toggle('is-lit', x.isIntersecting); }); }, {threshold:.4});
+    $$('.menyala').forEach(function(el){ nyalaIO.observe(el); });
+    /* tergambar: cadangan JS bila browser belum mendukung view timeline; hanya menghitung elemen yang terlihat */
+    var garis = $$('[data-tergambar]');
+    if (!sdaView && garis.length){
+      var terlihat = [], gTick = false;
+      var tergambar = function(){
+        gTick = false;
+        var vh = window.innerHeight;
+        terlihat.forEach(function(g){ var r = g.getBoundingClientRect(); g.style.setProperty('--t', Math.min(1, Math.max(0, (vh - r.top) / (vh * .6) - .1))); });
+      };
+      var tIO = new IntersectionObserver(function(en){
+        en.forEach(function(x){ var i = terlihat.indexOf(x.target); if (x.isIntersecting && i < 0) terlihat.push(x.target); else if (!x.isIntersecting && i > -1) terlihat.splice(i, 1); });
+        tergambar();
+      });
+      garis.forEach(function(g){ g.style.setProperty('--t', 0); tIO.observe(g); });
+      window.addEventListener('scroll', function(){ if (terlihat.length && !gTick){ gTick = true; requestAnimationFrame(tergambar); } }, {passive:true});
+    }
+    /* Pengantar: cadangan JS untuk --p (= animation-range "cover 18% cover 52%"); hanya dihitung selama kalimat terlihat */
+    var kalimat = $('.intro-kalimat');
+    if (!sdaView && kalimat){
+      var kLihat = false, kTick = false;
+      var nyalakan = function(){
+        kTick = false;
+        var r = kalimat.getBoundingClientRect(), vh = window.innerHeight, cover = (vh - r.top) / (vh + r.height);
+        kalimat.style.setProperty('--p', Math.min(1, Math.max(0, (cover - .18) / .34)));
+      };
+      new IntersectionObserver(function(en){ kLihat = en[0].isIntersecting; nyalakan(); }).observe(kalimat);
+      window.addEventListener('scroll', function(){ if (kLihat && !kTick){ kTick = true; requestAnimationFrame(nyalakan); } }, {passive:true});
+    }
+  }
+
+  /* ---------- Judul section [data-judul]: kata muncul berurutan dengan blur-in ----------
+     Satu utilitas untuk semua judul: tambahkan atribut data-judul pada h2 section baru. Dipecah per kata (span .jk),
+     elemen anak (span berwarna, kata Arab) dipertahankan; .sr-only/aria-hidden dilewati. Jeda 75 ms per kata, maks 600 ms.
+     data-judul=".k" (Pengantar) = pakai span kata yang sudah ada; efek menyala per kata (warna, scroll) tetap berjalan.
+     Dipicu IntersectionObserver (threshold .4) sekali. Judul yang sudah terlihat saat halaman dibuka (termasuk lewat
+     #anchor / refresh di tengah halaman) tidak dianimasikan. Setelah selesai, kelas dilepas (will-change & transisi hilang). */
+  (function(){
+    var judul = $$('[data-judul]'); if (!judul.length || reduce || !('IntersectionObserver' in window)) return;
+    var t0 = performance.now();
+    function pecah(el, ctx){
+      Array.prototype.slice.call(el.childNodes).forEach(function(n){
+        if (n.nodeType === 3){
+          var bagian = n.nodeValue.split(/(\s+)/), frag = document.createDocumentFragment();
+          bagian.forEach(function(b){
+            if (!b) return;
+            if (/^\s+$/.test(b)){ frag.appendChild(document.createTextNode(b)); return; }
+            var sp = document.createElement('span'); sp.className = 'jk'; sp.style.setProperty('--jd', Math.min(ctx.i++ * 75, 600) + 'ms');
+            sp.textContent = b; frag.appendChild(sp);
+          });
+          el.replaceChild(frag, n);
+        } else if (n.nodeType === 1 && !n.classList.contains('sr-only') && n.getAttribute('aria-hidden') !== 'true' && !n.classList.contains('jk')){
+          pecah(n, ctx);
+        }
+      });
+      return ctx.i;
+    }
+    function jalankan(h, n){
+      h.classList.add('judul-jalan');
+      requestAnimationFrame(function(){ requestAnimationFrame(function(){ h.classList.remove('judul-tunggu'); }); });
+      setTimeout(function(){ h.classList.remove('judul-jalan'); }, Math.min((n - 1) * 75, 600) + 800 + 80);
+    }
+    var io = new IntersectionObserver(function(en){
+      en.forEach(function(x){
+        if (!x.isIntersecting) return; io.unobserve(x.target);
+        /* lompatan #anchor yang terjadi sesaat setelah dibuka: tampil langsung */
+        if (performance.now() - t0 < 350){ x.target.classList.remove('judul-tunggu'); return; }
+        jalankan(x.target, +x.target.dataset.jumlahKata || 1);
+      });
+    }, {threshold:.4});
+    judul.forEach(function(h){
+      var r = h.getBoundingClientRect();
+      if (r.top < window.innerHeight && r.bottom > 0) return;          // sudah terlihat saat dibuka → apa adanya
+      if (r.bottom <= 0) return;                                        // sudah terlewati (refresh di tengah) → apa adanya
+      /* data-judul="<selector>": judul yang sudah punya span per kata (mis. Pengantar: .k di versi aria-hidden) memakai
+         span itu langsung, tidak dipecah ulang */
+      var sel = h.getAttribute('data-judul');
+      if (sel){
+        var kata = $$(sel, h);
+        kata.forEach(function(k, i){ k.classList.add('jk'); k.style.setProperty('--jd', Math.min(i * 75, 600) + 'ms'); });
+        h.dataset.jumlahKata = kata.length;
+      } else h.dataset.jumlahKata = pecah(h, {i:0});
+      h.classList.add('judul-tunggu');
+      io.observe(h);
+    });
+  })();
+
+  /* ---------- Konfigurasi (site-config.js) → tautan & teks di halaman. Teks di HTML = cadangan ---------- */
+  var CFG = window.LCDU_CONFIG || {};
+  function cfg(path){ return path.split('.').reduce(function(o,k){ return o == null ? o : o[k]; }, CFG); }
+  function external(a){ a.target = '_blank'; a.rel = 'noopener'; }
+  $$('[data-cfg-href]').forEach(function(a){ var v = cfg(a.dataset.cfgHref); if (v) a.href = v; external(a); });
+  $$('[data-cfg-text]').forEach(function(el){ var v = cfg(el.dataset.cfgText); if (v) el.textContent = v; });
+  $$('[data-wa]').forEach(function(a){
+    var no = cfg('whatsappAdmin.nomor'), pesan = cfg('whatsappAdmin.pesan.' + a.dataset.wa);
+    if (no) a.href = 'https://wa.me/' + no + (pesan ? '?text=' + encodeURIComponent(pesan) : '');
+    external(a);
+  });
+  /* ---------- Cara bergabung: pilihan bahasa (kendali tunggal) → section[data-bahasa] + event "bahasa" ---------- */
+  var gabung = $('#bergabung');
+  function setBahasa(b){
+    gabung.dataset.bahasa = b;
+    gabung.dispatchEvent(new CustomEvent('bahasa', { detail: b }));
+  }
+  if (gabung){
+    $$('.pilih-bahasa input', gabung).forEach(function(r){ r.addEventListener('change', function(){ if (r.checked) setBahasa(r.value); }); });
+    var awalB = $('.pilih-bahasa input:checked', gabung);
+    /* kartu Placement Test: status, tautan & nama bagian mengikuti bahasa */
+    var ptK = $('#placement', gabung), NAMA = { en: 'Bahasa Inggris', ar: 'Bahasa Arab' };
+    gabung.addEventListener('bahasa', function(e){
+      var b = e.detail, open = !!cfg('placement.' + b + '.open'), url = cfg('placement.' + b + '.url');
+      ptK.dataset.open = open;
+      if (url) $('.pt-mulai', ptK).href = url;
+      $$('.pt-nama-bhs', ptK).forEach(function(n){ n.textContent = NAMA[b]; });
+      $$('.pt-label b', ptK).forEach(function(n){ n.textContent = n.dataset[b]; });
+    });
+    setBahasa(awalB ? awalB.value : 'en');
+    /* jalur enam langkah: lentera menyala berurutan sekali saat jalur masuk layar */
+    var jalur = $('#jalur', gabung);
+    if ('IntersectionObserver' in window) new IntersectionObserver(function(en, ob){ if (en[0].isIntersecting){ jalur.classList.add('jalur-nyala'); ob.disconnect(); } }, {threshold:.4}).observe(jalur);
+    else jalur.classList.add('jalur-nyala');
+    if ('IntersectionObserver' in window){
+      new IntersectionObserver(function(en, ob){ if (en[0].isIntersecting){ ptK.classList.add('pt-tampil'); ob.disconnect(); } }, {threshold:.35}).observe(ptK);
+    } else ptK.classList.add('pt-tampil');
+    /* Tes suara: nada pendek naik (C5–E5–G5) lewat Web Audio; tanpa berkas, tanpa mikrofon, tanpa izin */
+    var AC = window.AudioContext || window.webkitAudioContext, actx = null, suara = $('.pt-suara', ptK), ket = $('#pt-suara-ket');
+    if (!AC) suara.parentElement.hidden = true;
+    else suara.addEventListener('click', function(){
+      actx = actx || new AC(); if (actx.state === 'suspended') actx.resume();
+      var t = actx.currentTime, o = actx.createOscillator(), g = actx.createGain();
+      o.type = 'sine'; o.frequency.setValueAtTime(523.25, t); o.frequency.setValueAtTime(659.25, t + .18); o.frequency.setValueAtTime(783.99, t + .36);
+      g.gain.setValueAtTime(0, t); g.gain.linearRampToValueAtTime(.16, t + .03); g.gain.setValueAtTime(.16, t + .52); g.gain.linearRampToValueAtTime(0, t + .64);
+      o.connect(g); g.connect(actx.destination); o.start(t); o.stop(t + .66);
+      ptK.classList.add('bunyi'); setTimeout(function(){ ptK.classList.remove('bunyi'); }, 700);
+      ket.textContent = 'Nada diputar. Terdengar jelas? Speaker atau headset kamu siap.';
+    });
+  }
+
+  /* ---------- Kenapa LCDU: pernyataan aktif = yang melewati tengah layar ----------
+     Desktop: foto & kata Arab di panggung sticky berganti (crossfade lewat CSS). HP: kata Arab pernyataan aktif terisi merah.
+     Tanpa JS: foto pertama tampil, semua teks terbaca. Reduced-motion: tetap berganti, tanpa transisi (CSS). */
+  var whyEl = $('#kenapa'), whyItems = $$('.why-item', whyEl), whyStage = $$('.why-stage [data-i]', whyEl);
+  function whyAktif(i){
+    whyItems.forEach(function(it, k){ it.classList.toggle('aktif', k === i); });
+    whyStage.forEach(function(el){ el.classList.toggle('on', +el.dataset.i === i); });
+  }
+  whyAktif(0);
+  if ('IntersectionObserver' in window){
+    var whyIO = new IntersectionObserver(function(en){ en.forEach(function(x){ if (x.isIntersecting) whyAktif(whyItems.indexOf(x.target)); }); },
+      {rootMargin:'-45% 0px -45% 0px'});
+    whyItems.forEach(function(it){ whyIO.observe(it); });
+  }
+
+  /* ---------- Struk biaya: cadangan JS untuk --cetak (= animation-range "cover 12% cover 48%"), hanya saat terlihat ---------- */
+  var struk = $('.receipt-wrap');
+  if (!reduce && 'IntersectionObserver' in window && !(window.CSS && CSS.supports('animation-timeline: view()'))){
+    var sLihat = false, sTick = false;
+    var cetak = function(){
+      sTick = false;
+      var r = struk.getBoundingClientRect(), vh = window.innerHeight, cover = (vh - r.top) / (vh + r.height);
+      struk.style.setProperty('--cetak', Math.min(1, Math.max(0, (cover - .12) / .36)));
+    };
+    new IntersectionObserver(function(en){ sLihat = en[0].isIntersecting; cetak(); }).observe(struk);
+    window.addEventListener('scroll', function(){ if (sLihat && !sTick){ sTick = true; requestAnimationFrame(cetak); } }, {passive:true});
+  }
+
+  /* ---------- Pilih kelas: layar terbelah ----------
+     Semua informasi selalu terlihat; geser/ketuk/hover hanya menekankan satu sisi. Desktop (≥ 1000px): d (px) = jarak
+     batas dari tengah; transform ditulis langsung di latar, pita & pegangan (tanpa layout, tanpa hitung ulang gaya isi). Rentang [MIN, 100-MIN]
+     dihitung dari lebar kolom teks (diukur sekali saat muat/resize, bukan per frame) supaya sisi yang menyempit tidak
+     tertabrak. Tarik: pointer capture, posisi diperbarui di requestAnimationFrame, tanpa transisi selama menarik.
+     Undangan sekali (58 → 42 → 50) & denyut hanya saat terlihat; dihentikan bila section keluar layar.
+     HP/tablet (< 1000px): blok bertumpuk; ketuk = penekanan visual. Reduced-motion: tanpa undangan, denyut, transisi. */
+  var split = $('#split'), pegangan = $('.split-pegangan', split), sisi = $$('.side', split), lebarMQ = window.matchMedia('(min-width: 1000px)');
+  var MIN = 35, aNow = 50, lebar = 0, kiri = 0, tarik = false, xTarik = 0, rafTarik = 0, undangan = [], hoverT = null;
+  var latarEn = $('.latar-en', split), latarIsi = $('.latar-en-isi', split), garis = $('.split-garis', split);
+  function ukurSplit(){
+    lebar = split.clientWidth;
+    var teks = $('.side-en .side-teks', split);
+    if (lebarMQ.matches && teks && lebar){
+      var kanan = teks.getBoundingClientRect().right - split.getBoundingClientRect().left;   // tepi kanan kolom teks Inggris
+      MIN = Math.min(45, Math.max(35, Math.ceil((kanan + 14 + 16) / lebar * 100)));        // + setengah pita + jarak aman
+    }
+    pegangan.setAttribute('aria-valuemin', MIN); pegangan.setAttribute('aria-valuemax', 100 - MIN);
+  }
+  function snapKe(a){ return [MIN, 50, 100 - MIN].reduce(function(b, s){ return Math.abs(s - a) < Math.abs(b - a) ? s : b; }); }
+  function setA(a, snap){
+    a = Math.max(MIN, Math.min(100 - MIN, a)); if (snap) a = snapKe(a);
+    aNow = a;
+    var d = ((a - 50) / 100 * lebar).toFixed(1);
+    if (lebarMQ.matches){
+      latarEn.style.transform = 'translateX(calc(' + d + 'px - 50%))'; latarIsi.style.transform = 'translateX(calc(50% - ' + d + 'px))';
+      garis.style.transform = pegangan.style.transform = 'translateX(' + d + 'px)';
+    } else latarEn.style.transform = latarIsi.style.transform = garis.style.transform = pegangan.style.transform = '';
+    var st = a > 51 ? 'en' : a < 49 ? 'ar' : 'imbang';
+    if (split.dataset.state !== st) split.dataset.state = st;
+    pegangan.setAttribute('aria-valuenow', Math.round(a));
+    pegangan.setAttribute('aria-valuetext', 'Inggris ' + Math.round(a) + '%, Arab ' + Math.round(100 - a) + '%');
+  }
+  function hentikanUndangan(){ undangan.forEach(clearTimeout); undangan = []; }
+  function sudah(){ if (!split.classList.contains('sudah')){ split.classList.add('sudah'); hentikanUndangan(); } }
+  function fokus(k){ setA(k === 'en' ? 100 - MIN : k === 'ar' ? MIN : 50); }
+  sisi.forEach(function(s){
+    s.addEventListener('click', function(){
+      sudah(); clearTimeout(hoverT);
+      if (!lebarMQ.matches){ split.dataset.state = split.dataset.state === s.dataset.side ? 'imbang' : s.dataset.side; return; }
+      fokus(split.dataset.state === s.dataset.side ? 'imbang' : s.dataset.side);
+    });
+    if (fine) s.addEventListener('pointerenter', function(){
+      if (!lebarMQ.matches || tarik) return;
+      clearTimeout(hoverT); hoverT = setTimeout(function(){ sudah(); fokus(s.dataset.side); }, 300);
+    });
+    if (fine) s.addEventListener('pointerleave', function(){ clearTimeout(hoverT); });
+  });
+  pegangan.addEventListener('pointerdown', function(e){
+    if (!lebarMQ.matches) return;
+    sudah(); clearTimeout(hoverT); tarik = true; xTarik = e.clientX;
+    kiri = split.getBoundingClientRect().left;                 // dibaca sekali per tarikan
+    split.classList.add('is-tarik'); pegangan.setPointerCapture(e.pointerId); e.preventDefault();
+  });
+  pegangan.addEventListener('pointermove', function(e){
+    if (!tarik) return; xTarik = e.clientX;
+    if (!rafTarik) rafTarik = requestAnimationFrame(function(){ rafTarik = 0; if (tarik) setA((xTarik - kiri) / lebar * 100); });
+  });
+  function lepas(){ if (!tarik) return; tarik = false; cancelAnimationFrame(rafTarik); rafTarik = 0; split.classList.remove('is-tarik'); setA(aNow, true); }
+  pegangan.addEventListener('pointerup', lepas);
+  pegangan.addEventListener('pointercancel', lepas);
+  pegangan.addEventListener('lostpointercapture', lepas);
+  pegangan.addEventListener('keydown', function(e){
+    var SN = [MIN, 50, 100 - MIN], i = SN.indexOf(aNow); if (i < 0) i = 1;
+    if (e.key === 'ArrowRight' || e.key === 'ArrowUp') setA(SN[Math.min(2, i + 1)]);
+    else if (e.key === 'ArrowLeft' || e.key === 'ArrowDown') setA(SN[Math.max(0, i - 1)]);
+    else if (e.key === 'Home') setA(MIN);
+    else if (e.key === 'End') setA(100 - MIN);
+    else return;
+    sudah(); e.preventDefault();
+  });
+  ukurSplit(); setA(50);
+  var rsT; window.addEventListener('resize', function(){ clearTimeout(rsT); rsT = setTimeout(function(){ ukurSplit(); setA(aNow, true); }, 150); });
+  if (lebarMQ.addEventListener) lebarMQ.addEventListener('change', function(){ ukurSplit(); setA(50); });
+  if ('IntersectionObserver' in window){
+    /* .is-lihat: denyut hanya saat terlihat; undangan yang belum selesai dihentikan bila section keluar layar */
+    new IntersectionObserver(function(en){
+      split.classList.toggle('is-lihat', en[0].isIntersecting);
+      if (!en[0].isIntersecting && undangan.length){ hentikanUndangan(); setA(50); }
+    }).observe(split);
+    if (!reduce) new IntersectionObserver(function(en, ob){
+      if (!en[0].isIntersecting) return; ob.disconnect();
+      if (!lebarMQ.matches || split.classList.contains('sudah')) return;
+      [[400, 58], [1150, 42], [1900, 50]].forEach(function(t, k, all){ undangan.push(setTimeout(function(){ setA(t[1]); if (k === all.length - 1) undangan = []; }, t[0])); });
+    }, {threshold:.5}).observe(split);
+  }
+
+  /* ---------- Cerita: tumpukan kartu ---------- */
+  var stack = $('#stack');
+  function arrange(){
+    $$('.card', stack).forEach(function(c,i){
+      c.style.zIndex = 10 - i;
+      c.style.transform = 'translate(' + (i*14) + 'px,' + (i*14) + 'px) rotate(' + (i===0?-1.5:i*2.5) + 'deg)';
+      c.setAttribute('aria-hidden', i === 0 ? 'false' : 'true');
+    });
+  }
+  function cycle(dx){
+    var top = $('.card', stack); if (!top) return;
+    var dir = dx < 0 ? -1 : 1;
+    top.style.transform = 'translate(' + (dir*120) + '%,-20px) rotate(' + (dir*18) + 'deg)';
+    setTimeout(function(){ stack.appendChild(top); arrange(); }, reduce ? 0 : 280);
+  }
+  arrange();
+  $('#next-story').addEventListener('click', function(){ cycle(1); });
+  var sx = 0, dx = 0, active = null;
+  stack.addEventListener('pointerdown', function(e){
+    var top = $('.card', stack); if (e.target.closest('a') || !top.contains(e.target)) return;
+    active = top; sx = e.clientX; dx = 0; top.classList.add('dragging'); top.setPointerCapture(e.pointerId);
+  });
+  stack.addEventListener('pointermove', function(e){ if (!active) return; dx = e.clientX - sx; active.style.transform = 'translate(' + dx + 'px,0) rotate(' + (dx/18) + 'deg)'; });
+  function end(){ if (!active) return; active.classList.remove('dragging'); if (Math.abs(dx) > 90) cycle(dx); else arrange(); active = null; }
+  stack.addEventListener('pointerup', end); stack.addEventListener('pointercancel', end);
+
+  /* ---------- Tim ---------- */
+  var TEAM = [
+    ['Agus Rustandi','Kepala Sekolah','mgmt',['TKT CLIL']],
+    ['Ihsan Ibadurrahman','Kepala Akademik, Guru','mgmt en',['TKT','CELTA','DELTA']],
+    ['Syahril Hermansyah','Kepala Admin, Guru','mgmt en',['TKT Module 1']],
+    ['Agus Saefullah','Bendahara','mgmt',[]],
+    ['Catur Nugraha R.','Staf IT, Guru','mgmt en',['TKT','CELTA']],
+    ['Rahmat Ependi','Guru Bahasa Arab','ar',[]],
+    ['Arie','Guru Bahasa Arab','ar',[]],
+    ['Russel Lavin','Guru Bahasa Inggris','en',['Native speaker','TKT','CELTA']],
+    ['Eggy Nurginanjar Nugraha','Guru Bahasa Inggris','en',['TKT','CELTA','DELTA M1']],
+    ['Nina Fatimah','Guru Bahasa Inggris','en',['TKT','CELTA']],
+    ['Alexandria Cempaka Harum','Guru Bahasa Inggris','en',['TKT']],
+    ['Ridha Fadilah','Guru Bahasa Inggris','en',['TKT']],
+    ['Astria Muzdalifah','Guru Bahasa Inggris','en',['TKT','DELTA M1']],
+    ['Taara Dewiana Kania','Guru Bahasa Inggris','en',['TKT','CELTA']],
+    ['Muhammad Edwar Kartakusuma','Guru Bahasa Inggris','en',['TKT']]
+  ];
+  var teamEl = $('#team');
+  function initials(n){ return n.replace(/\./g,'').split(' ').filter(Boolean).slice(0,2).map(function(w){return w[0]}).join('').toUpperCase(); }
+  teamEl.innerHTML = TEAM.map(function(m){
+    return '<li class="member" data-g="'+m[2]+'" tabindex="0"><div class="portrait"><span class="ini">'+initials(m[0])+'</span>'+
+      (m[3].length?'<div class="certs">'+m[3].map(function(c){return '<span>'+c+'</span>'}).join('')+'</div>':'')+
+      '</div><div><b>'+m[0]+'</b><span class="role">'+m[1]+'</span></div></li>';
+  }).join('');
+  var groups = [['all','Semua'],['en','Bahasa Inggris'],['ar','Bahasa Arab'],['mgmt','Pengelola']];
+  var chips = $('#chips');
+  chips.innerHTML = groups.map(function(g,i){
+    var n = g[0]==='all' ? TEAM.length : TEAM.filter(function(m){ return m[2].split(' ').indexOf(g[0])>-1; }).length;
+    return '<button class="chip" type="button" data-g="'+g[0]+'" aria-pressed="'+(i===0)+'">'+g[1]+'<small>'+n+'</small></button>';
+  }).join('');
+  $$('.chip', chips).forEach(function(c){
+    c.addEventListener('click', function(){
+      $$('.chip', chips).forEach(function(x){ x.setAttribute('aria-pressed', x === c); });
+      var g = c.dataset.g;
+      $$('.member', teamEl).forEach(function(m){ m.classList.toggle('out', g !== 'all' && m.dataset.g.split(' ').indexOf(g) < 0); });
+    });
+  });
+
+  /* ---------- Salin rekening ---------- */
+  var copyBtn = $('#copy'), copied = $('#copied'), acct = $('#acct');
+  copyBtn.addEventListener('click', function(){
+    var digits = acct.textContent.replace(/\D/g,'');
+    function ok(){ copied.hidden = false; setTimeout(function(){ copied.hidden = true; }, 2200); }
+    function fallback(){ var sel = window.getSelection(), rg = document.createRange(); rg.selectNodeContents(acct); sel.removeAllRanges(); sel.addRange(rg); copied.textContent = 'Nomor terpilih, tekan salin'; ok(); }
+    try { navigator.clipboard.writeText(digits).then(function(){ copied.textContent = 'Nomor tersalin'; ok(); }, fallback); } catch(err){ fallback(); }
+  });
+
+  /* ---------- Kosakata hari ini ---------- */
+  var W = [
+    ['resilient','tangguh, cepat bangkit','صَبْر','sabar'],
+    ['eloquent','fasih dan meyakinkan','عِلْم','ilmu'],
+    ['meticulous','sangat teliti','شُكْر','syukur'],
+    ['persevere','tekun bertahan','أَمَل','harapan'],
+    ['articulate','mampu mengungkapkan dengan jelas','صَدِيق','teman'],
+    ['curious','ingin tahu','نُور','cahaya'],
+    ['endeavour','usaha sungguh-sungguh','كِتَاب','buku']
+  ];
+  var d = new Date(), day = Math.floor((d - new Date(d.getFullYear(),0,0)) / 864e5), w = W[day % W.length];
+  $('#w-en').textContent = w[0]; $('#w-en-id').textContent = w[1]; $('#w-ar').textContent = w[2]; $('#w-ar-id').textContent = w[3];
+})();
+</script>
+<script type="module">
+/* Scroll halus untuk seluruh halaman (Lenis, di-vendor). Tidak aktif saat prefers-reduced-motion. */
+import Lenis from './vendor/lenis/lenis.mjs';
+const lenis = matchMedia('(prefers-reduced-motion: reduce)').matches ? null : (window.lenis = new Lenis({ lerp: .12, autoRaf: true }));
+/* tautan #anchor: hormati scroll-margin-top (nav tidak menutupi judul) dan pindahkan fokus ke section tujuan */
+document.addEventListener('click', e => {
+  const a = e.target.closest('a[href^="#"]'); if (!a || e.defaultPrevented) return;
+  const id = a.getAttribute('href'), t = id.length > 1 && document.getElementById(id.slice(1));
+  if (!t || t === a) return;
+  e.preventDefault();
+  if (lenis) lenis.scrollTo(t, { offset: -(parseFloat(getComputedStyle(t).scrollMarginTop) || 0) });
+  else t.scrollIntoView();
+  history.pushState(null, '', id);
+  if (!t.hasAttribute('tabindex')) t.setAttribute('tabindex', '-1');
+  t.focus({ preventScroll: true });
+});
+</script>
+<script type="module" src="./hero/hero.js"></script>
+</body>
+</html>
